@@ -1,0 +1,50 @@
+.Dncontainer
+{
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-evenly;
+    height: auto;
+    padding:50px;
+    margin-bottom: 5px;
+}
+.dnimage
+{
+    width: 600px;
+
+}
+.dntext
+{
+    width: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dntext h3
+{
+    line-height: 30px; 
+    word-spacing: 10px; 
+
+}
+.dnimage
+{
+    position: relative;
+  top: 0;
+  left: 0;
+}
+
+.dnimg1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #000000;
+  }
+  
+  .dnimg2 {
+    position: absolute;
+    border-radius: 5px;
+    top: 400px;
+    left: 250px;
+   
+  }

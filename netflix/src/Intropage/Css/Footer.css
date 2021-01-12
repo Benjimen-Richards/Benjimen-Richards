@@ -1,0 +1,63 @@
+.Footercontainer
+{
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-evenly;
+    height: auto;
+    padding:100px;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+.Questions h4
+{
+    color: rgb(66, 61, 61);
+    margin-left: 80px;
+}
+.block
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.block a{
+    margin: 10px;
+    text-decoration:none;
+    color: rgb(66, 61, 61);
+}
+.Footerlinks
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.block a:hover
+{
+    color: white;
+}
+.selectlang select
+{
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: rgb(66, 61, 61);
+  widows: auto;
+  padding: 15px;
+  height: auto;
+  border: none;
+  
+}
+.selectlang
+{
+    padding-left:70px;
+
+}
+.bottom
+{
+    color: rgb(66, 61, 61);
+    margin-left: 80px;
+}

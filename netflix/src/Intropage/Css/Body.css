@@ -1,0 +1,50 @@
+.bdycontainer
+{
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-evenly;
+    height: auto;
+    padding:50px;
+    margin-bottom: 5px;
+}
+.text
+{
+    width: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text h3
+{
+    line-height: 30px; 
+    word-spacing: 10px;  
+}
+.bdyimage img
+{
+    
+    width: 400px;
+    height: 300px;
+}
+.bdyimage
+{
+    position: relative;
+  top: 0;
+  left: 0;
+}
+
+.img1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #000000;
+  }
+  
+  .img2 {
+    position: absolute;
+    border-radius: 5px;
+    top: 60px;
+    left: 53px;
+    border: 1px solid #000000;
+  }

@@ -1,0 +1,50 @@
+.wthcontainer
+{
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-evenly;
+    height: auto;
+    padding:50px;
+    margin-bottom: 5px;
+}
+.wthtext
+{
+    width: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wthtext h3
+{
+    line-height: 30px; 
+    word-spacing: 10px;  
+}
+.wthimage img
+{
+    width: 400px;
+    height: 300px;
+}
+.wthimage
+{
+    position: relative;
+  top: 0;
+  left: 0;
+}
+
+.wthimg1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #000000;
+  }
+  
+  .wthimg2 {
+    position: absolute;
+    border-radius: 5px;
+    top: 30px;
+    left: 73px;
+    border: 1px solid #000000;
+    
+  }
