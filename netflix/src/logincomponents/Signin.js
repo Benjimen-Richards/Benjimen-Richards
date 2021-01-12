@@ -14,6 +14,9 @@ const Signin = () => {
             </div>
             <div className='form2'>
                 <form action="/action_page.php">
+                    <div>
+                        <h2>Sign in</h2>
+                    </div>
                     <div class="form-group">
                         <label for="email">Email address:</label>
                         <input type="email" class="form-control" id="email" />
@@ -26,6 +29,10 @@ const Signin = () => {
                         <label><input type="checkbox" /> Remember me</label>
                     </div>
                     <button type="submit" class="btn btn-default">Submit</button>
+                    <div>
+                        <h4>New to Netflix? Sign up now.
+This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</h4>
+                    </div>
                 </form>
             </div>
         </div>
