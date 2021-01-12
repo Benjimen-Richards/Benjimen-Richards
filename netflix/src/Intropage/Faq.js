@@ -1,7 +1,6 @@
 import './Css/Faq.css'
 
 const Faq = () => {
-
     return (
         <div className='Faqcontainer'>
             <div className='Faq_text'>

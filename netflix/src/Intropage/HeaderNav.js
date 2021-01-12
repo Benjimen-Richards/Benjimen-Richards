@@ -8,7 +8,9 @@ const Headernav = () => {
             </div>
             <div className='nav'>
                 <div className='navimg'>
-                    <Link to='/'><img src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
+                    <Link to='/'><img style={{
+                        width: '300px', height: '200px'
+                    }} src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
                 </div>
                 <div className='navbutton'>
                     <Link to='/signin'><button type="button" class="btn btn-danger">Sign in</button></Link>
