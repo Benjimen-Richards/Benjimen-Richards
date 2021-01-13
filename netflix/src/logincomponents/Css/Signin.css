@@ -1,4 +1,4 @@
-.signincontainer
+/* .signincontainer
 {
  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/9a818ce7-5b19-4a0a-8bec-e4a233c8661b/8a09c2e9-b912-4286-8836-706712bdad61/IN-en-20210104-popsignuptwoweeks-perspective_alpha_website_small.jpg');
  background-size: fill;
@@ -34,4 +34,53 @@
 .form2 input
 {
     border: none;
+} */
+
+.sigincontainer
+{
+    position: relative;
+    box-sizing: border-box;
+}
+.signinbackgrd img
+{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.7;
+}
+.signinlogo
+{
+    position: absolute;
+    top: 0;
+    margin-left: 5%;
+}
+.form2
+{
+    box-sizing: border-box;
+    position: absolute;
+    top: 20%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 35%;
+    padding: 70px;
+    padding-top: 100px;
+    height: 70%;
+    font-size: 34px;
+    overflow:hidden;
+}
+.form1
+{
+    box-sizing: border-box;
+    position: absolute;
+    background-color: black;
+    opacity: 0.9;
+    top: 20%;
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 35%;
+    border-radius: 10px;
+  
 }

@@ -8,40 +8,27 @@
     height: 100vh;
     top: 0;
     left: 0;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 .nav
-{   
+{
     position: absolute;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    /* background-color: white; */
-    height: 100px;
-    width:80%;
     justify-content: space-between;
-
 }
-.navbutton
+.nav2 
 {
-    height: 100px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    
+    width: 30%;
 }
-.navbutton button
+#nav_button 
 {
-    width: 100px;
-    height: 50%;
-    font-size: 20px;
+    width: 120%;
 }
-
 .navimg img
 {
-    width: 150px;
-    height: 100%;
-}
-.navimg
-{
-    margin-top: 0;
+    margin-left: 32%;
 }

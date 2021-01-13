@@ -8,6 +8,8 @@
     margin-bottom: 5px;
     max-height: 100vh;
     position: relative;
+    overflow: hidden;
+    
 }
 .headerbody
 {
@@ -17,6 +19,8 @@
     max-width: 1000px;
     max-height: 1000px;
     display: flex;
+    font-size: 30px;
+    height: 60%;
     flex-direction: column;
 }
 .bodywelcome
@@ -25,20 +29,23 @@
     justify-content: center;
     padding-left: 20px;
     flex-wrap: wrap;
+    font-size: 30px;
     text-align: center;
 }
 .bodywelcome h1
 {
-    font-size: 60px;
+    font-size: 80px;
 }
 .bodywatch
 {
     display: flex;
+    font-size: 50px;
     justify-content: center;
 }
 .bodyready
 {
     display: flex;
+    font-size: 50px;
     justify-content: center;
     text-align: center;
     /* flex-wrap: wrap; */

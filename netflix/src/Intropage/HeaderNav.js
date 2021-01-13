@@ -12,8 +12,8 @@ const Headernav = () => {
                         width: '300px', height: '200px'
                     }} src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
                 </div>
-                <div className='navbutton'>
-                    <Link to='/signin'><button type="button" class="btn btn-danger">Sign in</button></Link>
+                <div className='nav2'>
+                    <Link to='/signin'><button id='nav_button' type="button" class="btn btn-danger">Sign in</button></Link>
                 </div>
             </div>
         </div>
