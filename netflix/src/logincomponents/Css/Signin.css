@@ -84,3 +84,15 @@
     border-radius: 10px;
   
 }
+#sigin_button
+{
+    color: white;
+    background-color: red;
+    width: 30%;
+}
+.a
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

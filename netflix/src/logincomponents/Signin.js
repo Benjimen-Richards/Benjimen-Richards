@@ -54,7 +54,7 @@ const Signin = () => {
                 }} src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
             </div>
             <div className='form1'>
-                <h1>k</h1>
+                <h1></h1>
             </div>
             <div className='form2'>
                 <form action="/action_page.php">
@@ -72,7 +72,9 @@ const Signin = () => {
                     <div class="checkbox">
                         <label><input type="checkbox" /> Remember me</label>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <div className='a'>
+                        <button id='sigin_button' type="submit" class="btn btn-default">Submit</button>
+                    </div>
                     <div>
                         <h4>New to Netflix? Sign up now.
 This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</h4>
