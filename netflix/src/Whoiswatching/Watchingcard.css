@@ -1,6 +1,25 @@
 .Card_container
 {
-    border: 1px solid white;
+    box-sizing: border-box;
     width: 10%;
-    height: 20vh
+    height: 20vh;
+    margin: 50px;
+    transition: width 1s,height 1s;
+ 
+}
+.card_img img
+{
+    width: 100%;
+    height: fill;
+}
+.card_name
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.Card_container:hover
+{
+    width: 12% ;
+    height: 22vh;
 }

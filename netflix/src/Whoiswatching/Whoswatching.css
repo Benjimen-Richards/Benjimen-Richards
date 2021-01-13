@@ -1,6 +1,7 @@
 .Watching_container
 {
     color: white;
+  
 }
 .watching_text
 {
@@ -9,4 +10,12 @@
     display: flex;
     justify-content: center;
     margin-top: 5%;
+}
+.Watching_card
+{
+    display: flex;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
