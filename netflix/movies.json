@@ -1,0 +1,99 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "name": "Riverdale",
+      "genere": "Series",
+      "imageurl": "https://i.pinimg.com/236x/ef/87/07/ef8707c0d1a39404c07450de32a8b83d.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Between",
+      "genere": "Series",
+      "imageurl": "https://i.pinimg.com/236x/dd/aa/94/ddaa943e3f8ae8a4633f1d5a92477f21.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Glitch",
+      "genere": "Series",
+      "imageurl": "https://i.pinimg.com/236x/51/93/99/51939967ed93995d55340608884e0e32.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Santa Clarita Diet",
+      "genere": "Series",
+      "imageurl": "https://i.pinimg.com/236x/73/61/d3/7361d3497d657b3cae93eb3b41d2d7ed.jpg"
+    },
+    {
+      "id": "5",
+      "name": "The Walking Dead",
+      "genere": "Series",
+      "imageurl": "https://i.pinimg.com/236x/da/dc/6f/dadc6f126e8d104819702b2c43de128a.jpg"
+    },
+    {
+      "id": "6",
+      "name": "A Series of unfortunatee Evenets",
+      "genere": "Series",
+      "imageurl": "https://i.pinimg.com/236x/2d/f0/51/2df05181879bdfa7c843836a64e28bbb.jpg"
+    },
+    {
+      "id": "7",
+      "name": "1 Reasons Why",
+      "genere": "Series",
+      "imageurl": "https://i.pinimg.com/236x/fc/6b/41/fc6b412f4e5da3519b7a23e53edc8929.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Bloodline",
+      "genere": "Series",
+      "imageurl": "https://i.pinimg.com/236x/ce/42/be/ce42be85a8374ea90994e815456c033e.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Once",
+      "genere": "Series",
+      "imageurl": "https://i.pinimg.com/236x/31/e2/5e/31e25ee33133fcef6a8328004188782f.jpg"
+    },
+    {
+      "id": "10",
+      "name": "LoveSick",
+      "genere": "Series",
+      "imageurl": "https://i.pinimg.com/236x/17/2f/2e/172f2e87d9341bca14df6ef55dfc670e.jpg"
+    },
+    {
+      "id": "11",
+      "name": "vampire diaries",
+      "genere": "flim",
+      "imageurl": "https://www.exploregeorgia.org/sites/default/files/styles/slideshow_large/public/legacy_images/vampire-diaries-cover-1485275999.jpg?itok=LGTdX3aZ"
+    },
+    {
+      "id": "12",
+      "name": "Formula 1",
+      "genere": "Documentary",
+      "imageurl": "https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQgQmh6BDX9OYZs9URfjj1ZjPmOtFLN4oW6HsaWq7RtmYMSoYJitx-QujjAQnUCqvhrBxFhUsCNXLBLidqX1jL6qOcLvOmn8NR3Q7WeTutpYrY8gi47fY9hdzhIW.jpg?r=80c"
+    }
+  ],
+  "genres": [
+    "Comedy",
+    "Fantasy",
+    "Crime",
+    "Drama",
+    "Music",
+    "Adventure",
+    "History",
+    "Thriller",
+    "Animation",
+    "Family",
+    "Mystery",
+    "Biography",
+    "Action",
+    "Film-Noir",
+    "Romance",
+    "Sci-Fi",
+    "War",
+    "Western",
+    "Horror",
+    "Musical",
+    "Sport"
+  ]
+}
