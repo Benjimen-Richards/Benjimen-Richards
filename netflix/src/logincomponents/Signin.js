@@ -12,9 +12,7 @@ const Signin = () => {
                     width: '300px', height: '200px'
                 }} src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
             </div>
-            <div className='form1'>
-                <h1></h1>
-            </div>
+            <div className='form1'></div>
             <div className='form2'>
                 <form action="/action_page.php">
                     <div>
