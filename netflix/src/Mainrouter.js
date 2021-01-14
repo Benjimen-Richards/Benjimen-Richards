@@ -7,6 +7,8 @@ import Documantaries from "./Netflixprofile.js/Documatary"
 import Flims from "./Netflixprofile.js/Flims"
 import Mainprofile from "./Netflixprofile.js/Mainprofile"
 import Series from "./Netflixprofile.js/Series"
+import Watchlist from "./Netflixprofile.js/Watchlist"
+import Practice from "./Practice"
 import Whoswatching from "./Whoiswatching/Whoswatching"
 const Mainrouter = () => {
     return (
@@ -21,6 +23,8 @@ const Mainrouter = () => {
                 <Route path='/flims' component={Flims} />
                 <Route path='/documantaries' component={Documantaries} />
                 <Route path='/register' component={Register} />
+                <Route path='/practice' component={Practice} />
+                <Route path='/watchlist' component={Watchlist} />
             </BrowserRouter>
         </div>
     )

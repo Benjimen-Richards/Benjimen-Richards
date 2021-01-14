@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import './Css/Header.css'
 import Headernav from './HeaderNav'
 class Header extends Component {
@@ -10,8 +10,11 @@ class Header extends Component {
         }
     }
     inputhandler = (e) => {
-        console.log(e.target.name, e.target.inputvalue)
-        this.setState({ [e.target.name]: e.target.inputvalue })
+        this.setState({ [e.target.name]: e.target.value })
+    }
+    registerbutton = () => {
+        sessionStorage.setItem('register_email', this.state.inputvalue)
+        this.props.history.push('/register')
     }
     render() {
         return (
@@ -28,9 +31,9 @@ class Header extends Component {
                         <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
                     </div>
                     <div className='Headerbodysearch'>
-                        <input placeholder='Email address' type='text' name='inputvalue' value={this.state.inputvalue} onClick={this.inputhandler} />
+                        <input placeholder='Email address' type='text' name='inputvalue' value={this.state.inputvalue} onChange={this.inputhandler} />
                         <Link to='/register' style={{ textDecoration: "none" }}>
-                            <button className='register_button' >Get started</button>
+                            <button onClick={this.registerbutton} className='register_button' >Get started</button>
                         </Link>
                     </div>
                 </div>
@@ -38,4 +41,4 @@ class Header extends Component {
         )
     }
 }
-export default Header
+export default withRouter(Header)

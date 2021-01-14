@@ -1,5 +1,6 @@
 import axios from "axios";
 import { Component } from "react";
+import { withRouter } from "react-router";
 import './Css/Series.css'
 const url = 'http://localhost:1234/movies'
 class Series extends Component {
@@ -22,16 +23,20 @@ class Series extends Component {
         }
         // console.log('filter', this.state.filteredmovie)
     }
+    selecthandler = (e) => {
+        console.log(e.target.value)
+    }
     rendermovie = (data) => {
         if (data) {
             return (
-                data.map(item => (< img src={item.imageurl} alt='netflix images' />)
+                data.map(item => (< img src={item.imageurl} id={item.id} onClick={this.selecthandler} alt='netflix images' />)
                 )
             )
         }
 
     }
     render() {
+
         return (
             <div className='Series_container'>
                 <div className='Series_searchbar'>
@@ -52,4 +57,4 @@ class Series extends Component {
         })
     }
 }
-export default Series
+export default withRouter(Series)

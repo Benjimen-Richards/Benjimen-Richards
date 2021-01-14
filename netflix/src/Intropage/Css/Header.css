@@ -75,3 +75,17 @@
     border: none;
     border-radius: 5px;
 }
+.moveup
+{
+    position: fixed;
+    bottom:10%;
+    right: 10%;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    font-size: 30px;
+    outline:none;
+}
+.moveup::-moz-focus-inner {
+    border: 0;
+ }

@@ -11,12 +11,12 @@ class Faq extends Component {
     }
     registerhandler = () => {
         sessionStorage.setItem('register_email', this.state.inputvalue)
-        // this.props.history.push('/register')
-        console.log(this.state.inputvalue)
+        this.props.history.push('/register')
+        // console.log(this.state.inputvalue)
     }
     inputhandler = (e) => {
-        console.log(e.target.name, e.target.inputvalue)
-        this.setState({ [e.target.name]: e.target.inputvalue })
+        console.log(e.target.name, e.target.value)
+        this.setState({ [e.target.name]: e.target.value })
     }
     render() {
         // console.log('props', this.props)

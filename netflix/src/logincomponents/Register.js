@@ -5,7 +5,7 @@ class Register extends Component {
         console.log('registername', sessionStorage.getItem('register_email'))
         return (
             <div>
-                <h1>{sessionStorage.getItem('register_email')}</h1>
+                <h1>Hi! {sessionStorage.getItem('register_email')}</h1>
             </div>
         )
     }

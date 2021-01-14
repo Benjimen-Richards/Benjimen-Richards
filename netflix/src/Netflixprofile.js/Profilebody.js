@@ -2,28 +2,32 @@ import { Component } from "react"
 import axios from 'axios'
 import './Css/Profilebody.css'
 const url = 'http://localhost:1234/movies'
+const carturl = 'http://localhost:1234/cart'
 class Profilebody extends Component {
     constructor() {
         super()
         this.state = {
             movies: '',
             series: '',
-            documentaries: ''
+            documentaries: '',
         }
     }
     renderseries = (data) => {
         if (data) {
             return (
-                data.map(item => (< img onClick={this.scrollhandler} src={item.imageurl} alt='netflix images' />)
+                data.map(item => (< img id={item.id} src={item.imageurl} onClick={this.selecthandler} alt='netflix images' />)
                 )
             )
         }
     }
-    scrollhandler = () => {
-        window.scrollTo({
-            top: 0
-
-        })
+    selecthandler = (e) => {
+        const id = e.target.id
+        const cartimage = this.state.movies.filter(item =>
+        (
+            parseInt(item.id) === parseInt(id)
+        ))
+        console.log('cartimage', cartimage)
+        axios.post(carturl, cartimage)
     }
 
     render() {

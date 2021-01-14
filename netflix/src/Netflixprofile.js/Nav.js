@@ -40,6 +40,9 @@ class Profilenav extends Component {
                     <div className='nav_right'>
                         <h1>Search</h1>
                         <img src={this.state.image} alt='/' />
+                        <Link to='/watchlist'>
+                            <h2>Watchlist</h2>
+                        </Link>
                     </div>
                 </div>
 
