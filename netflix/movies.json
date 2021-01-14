@@ -62,38 +62,303 @@
     },
     {
       "id": "11",
-      "name": "vampire diaries",
-      "genere": "flim",
-      "imageurl": "https://www.exploregeorgia.org/sites/default/files/styles/slideshow_large/public/legacy_images/vampire-diaries-cover-1485275999.jpg?itok=LGTdX3aZ"
+      "name": "Stranger Things",
+      "genere": "Series",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXMHsJCyHKyf3X3oEmYczFvXsgIiNdSK2bMf3pXy17SGgjGp_Utp8F4BRP-ui192RsgKQxZCzvkGVuI2N7Z0Rgh5a48_HMeLuEAc1TDK-8PjJBLwLlDAmAEwMlYX.jpg?r=da1"
     },
     {
       "id": "12",
-      "name": "Formula 1",
-      "genere": "Documentary",
-      "imageurl": "https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQgQmh6BDX9OYZs9URfjj1ZjPmOtFLN4oW6HsaWq7RtmYMSoYJitx-QujjAQnUCqvhrBxFhUsCNXLBLidqX1jL6qOcLvOmn8NR3Q7WeTutpYrY8gi47fY9hdzhIW.jpg?r=80c"
+      "name": "Lost in Space",
+      "genere": "Series",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABao9TMw58bSJyX0HpbyhY5gizoMfnwLMvGEoO6IfZvHjup0AcSIDaiEsWWwm6P_u6fHmVyL1eaDXasAnNgeBxY0C-ADjB9ze-S5dzDFbEHkC8vFWNmlKsFCWkmvy.jpg?r=dab"
+    },
+    {
+      "id": "13",
+      "name": "Vikings",
+      "genere": "Series",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABerMAYcANk2GocrsAChkFkmaP5jrn7SbpD89ezcZ6buf4ITCzhqkJJ_e-f55Jv1mptxW6_tTD6qJKOc2kxK1v_S8RoqB6azrVntU9z1MSbxliK8-_iexPVFiYbq53ynHcw.jpg?r=eab"
+    },
+    {
+      "id": "14",
+      "name": "Friends",
+      "genere": "Series",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYryfSD2xXO3xKEPb6TJdccJ1pXIto2FWmwlmeiLno1w8qmKs-rieQp78QaimZFfnNFjgf8zqVT8PyORowGvzsUIzqE.jpg?r=75b"
+    },
+    {
+      "id": "15",
+      "name": "Money Heist",
+      "genere": "Series",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWN2gs7Ph0YCvz-pvnA2gio0pwYOM3T3jJ8xt3lPF7UsPpobqUexfddqZVp40Cu_Xy27q1liBPHrdIKGmy9p16Uf4C-n9aq5nnRU7licS5JjC2UXUCLG-RTezxqC.jpg?r=373"
+    },
+    {
+      "id": "16",
+      "name": "Lucifer",
+      "genere": "Series",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeAMbUJJlktp6w8UpYSHW8cJHkEeNS76gQw5ThMDuqn8QdmYH4ATHCfoJmgy9x3VBh6ZPa9h8Mit7PyyZifGP8bmBPd5LIr-WizyVYqIVPEaGKc7XP-LQ7wfgZar.jpg?r=62e"
+    },
+    {
+      "id": "17",
+      "name": "Breaking Bad",
+      "genere": "Series",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeAuDKIU6ojBLB_b3eTdFBIUmNJ57Sr7xXk4z8I7GyygIrXQyknSm8gI_dhh5Fsp2lnm8DY9ZOEOIA-C1ReeZ5254Ow.jpg?r=01d"
+    },
+    {
+      "id": "18",
+      "name": "Delhi Crime",
+      "genere": "Series",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbA3BuaGpZNF-heyWuI3L5OwsMg8Z71b6IoNIr1CQTOSgpIOfaXmKRdWlczOAB5Kr1S_SDwAs3KcCO2AHGJeHAVpVncsGJ8PR4vc4ZAhtOuoZXZJGnYhOMLkdkwo.jpg?r=0bd"
+    },
+    {
+      "id": "19",
+      "name": "The Last Kingdom",
+      "genere": "Series",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY61X8lNLH5LgEo88jfkptq8tUp-h5jF3x9Hqf9oLkIje28evOViDkydGLcwdufBglBSTNW6Ju8GrzvfsWiy8bXmqFj1H9DcPcHcEdbCBn6MNOWM5E7l5gKr4qfI.jpg?r=866"
+    },
+    {
+      "id": "20",
+      "name": "Narcos",
+      "genere": "Series",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa-oTyIxZjZX2RV59zIXh0I_NOJB16m7Iky-RTZ9jqavv58JOO4FcsoW_WH_vKdt9Cu8ZIZxDmDqb6FvEk6zj2aMp-GajzsrK9qJcFKdVZ7oNofBA9redABpGuwb.jpg?r=973"
+    },
+    {
+      "id": "21",
+      "name": "Ludo",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY_rBwlPDEznIL4MMygT4B6rMN6Snup4wUu3suDV1yjSi12EvH8whZ2XSlA2SGo17Gygf-nUrNz__YId3169Bb9ypEnSWMePQaIqnGFAni_bAuKJse1mGowtCaMO.jpg?r=cae"
+    },
+    {
+      "id": "22",
+      "name": "Extraction",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaUD92whdwqVnEPh5fMHOBL5vext3SdEnKXR03ZDZ7on7yhm0es-61Q_70kKhas_PtfHMDD49bJJ4F3w015XiAFW7H9cDUzEDl8TFSKPAHWhImqoatBUPOMxuj2N.jpg?r=1f7"
+    },
+    {
+      "id": "23",
+      "name": "Aquaman",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa1nyBEi4gqCXXYJXObKWDwHT3HARnPQTPIi1G0IoXNApiXdldb6HG-M6sAaT4iSEE9L-SljqzTf0jlJl6WRfLvCRYA.jpg?r=845"
+    },
+    {
+      "id": "24",
+      "name": "Bheeshma",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABW5liO94rcWdZa8HwPd7wl_mtkWVTSxN5u20C9jgMtqpxOTeMBJLZFV_ZREXEngDr9NofygSxbJg_Gp6M475_sWykAY.jpg?r=0ce"
+    },
+    {
+      "id": "25",
+      "name": "Mortal Engines",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUr0A039vy799fuD7Z4auE9wdTHbSnPq3aqLS0Z-OFsD9tLV4LRBV1Oh-VFyHme0gNjDKIOCXwg9JDAdAelKeHdTAHY.jpg?r=8f5"
+    },
+    {
+      "id": "26",
+      "name": "Now You See Me 2",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUxhNovT76uqBFuptb1L1FyStCqxcTAbofq5NoNAb70aq42C0p2GOApmU-qckeH4LnrdR9NBnCkYXSvm-uaRPDWGvlk.jpg?r=02e"
+    },
+    {
+      "id": "27",
+      "name": "Skyscraper",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSxa9GSjtPn_o4KDU2D_7e9QH-MaCJvDnjnC-zQR9hM7sqFE9Zwm_pPRfUZGOz9gNJbbiVKySEhet6ZR4FXdh0kvRAs.jpg?r=44c"
+    },
+    {
+      "id": "28",
+      "name": "Interstrellar",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVj8OwhVRnrcI6kyjRrmBBZiQLgljIlTzAh04ZUaaXImWToEwX_vbKZMvlKNEk5i4JDQw4ftL4cGdTeKD3-6sfL8ny0.jpg?r=a41"
+    },
+    {
+      "id": "29",
+      "name": "The Dark Knight",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUh-ke9RvUUikoM6eSWofmbM9egYZ8cYichJT8L2fq66CBS8qczPqu_YHR939SNk0qBUUrKQ_37Dowd-Il7q7ATKT7g.jpg?r=e70"
+    },
+    {
+      "id": "30",
+      "name": "Alive",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWwjB0gPhss9coE4tlz6za8g9KuYfE3DDUBBTwxVyw00EBroYZsrBb9dkBsrYvjkcXyHbWrRZPKFCmxwSaYr_mISnvYQtxmD0UUF_HswsD5vNLyCY8CZ2MviecHv.jpg?r=400"
+    },
+    {
+      "id": "31",
+      "name": "Article 15",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa0-lUGgazKs6XfnwgIz-ipepbPQ4PpaPbi-DvRPfkxOssEFnq1-ynqx8kUzV1YCaoOQsk_6aIR3WD2JdOt8hg--YMw.jpg?r=d2c"
+    },
+    {
+      "id": "32",
+      "name": "Man of Steel",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSW9edTGFu205ll_htQhuHEi5GEeUoIGBz7ctqBC3XWq_s0-2-ML9p65N68iKBE-eBzTs-wL2u9ANAaanPp656aylro.jpg?r=a60"
+    },
+    {
+      "id": "33",
+      "name": "Fast & Furious 6",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABd6ecFvaNZUOoAo8Cd2PP4_f4Zl6GdOt8ZmjNO4YYSkhLDnqDQ9uWPRjnaqJC2oWB0ou8oad6HnGWbLaGIp3xDN0Dks.jpg?r=004"
+    },
+    {
+      "id": "34",
+      "name": "Escape Plan",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRDgsK2S9xkERlY9a3N2Jo9IvsTCeT98BFmi1Vbo1RrolCTvVAeu7oVvrmW_JoijFjC9K1ZCy0GIsJyDhTLcU-J0Ht5w.jpg?r=4ec"
+    },
+    {
+      "id": "35",
+      "name": "Lucy",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTm46V-Ejp87dweD6QMuTN71cEbU57omed2hpkacVD8ZDx1KsHkzx7vg6BdyTyPv_4GsS5n9Ixck2FDfT0M0f8JyhEY.jpg?r=014"
+    },
+    {
+      "id": "36",
+      "name": "2012",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRNE-yELjAQoxWpP6jjg_VTKbyHo2ckjsXSBo4AftqMIiG0eqPZuwpfMYb9pHCAw9HO9KH5gkaaXxww2L63YmZqKxhU.jpg?r=e90"
+    },
+    {
+      "id": "37",
+      "name": "Edge of Tomorrow",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZT2QaVU1vb0xH3GBZjroZCnSx0aLN6aYy7gM5xKzaLhky5zkmr05EtCGNpdAijki8pX0RF5ltOuZUAAMntAQYX94vo.jpg?r=2d5"
+    },
+    {
+      "id": "38",
+      "name": "Matrix",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSof4o_SiVBC6yxgJpJc0bF7k4ynzleLB3dT66KogcjzaagAm_8cuEE2fHIMDsxfwWie42gmKlkzV-Ac59rIjL-37V0.jpg?r=ce8"
+    },
+    {
+      "id": "39",
+      "name": "World War Z",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABf1uzeINNgSxsOM45jQkgK7p9ednogqlbYlu6lVX6mUgHGushF1p5fjjgAq0ial1ZN9ingu4u9v97U1GpwOWXAV56yU.jpg?r=3d1"
+    },
+    {
+      "id": "40",
+      "name": "Ready Player One",
+      "genere": "Movies",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABexxDbh0-YpWCJhKGOIKXDna7XXfvtKzNreIPDwaJf3GGA_E_Pl526Ng0kLsCZG8Mt0Duj0XcDyJGto-mld_CB82m0I.jpg?r=0df"
+    },
+    {
+      "id": "41",
+      "name": "Formula 1: Drive to Survive",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQgQmh6BDX9OYZs9URfjj1ZjPmOtFLN4oW6HsaWq7RtmYMSoYJitx-QujjAQnUCqvhrBxFhUsCNXLBLidqX1jL6qOcLvOmn8NR3Q7WeTutpYrY8gi47fY9hdzhIW.jpg?r=80c"
+    },
+    {
+      "id": "42",
+      "name": "Our Planet",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXJPITJ_ZJ4oabejJo767hQSBX7lj_JE3c5A6zSejTBx-3qVDc8DH-pgqDdpV03ty5IUs8hXwxHv6wUkEFjwkfBzAR0smQ2D1VG0At18fV4vGZYXsfUUfqnoQdl8.jpg?r=c53"
+    },
+    {
+      "id": "43",
+      "name": "Bad Boy Billionaires: India",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVr1PF5PebQ0X5foP9tGIINEfgZe7-4KgrJXhhPy3X1ku757CTKXAhjUaH5Spa18RpsT-ADTlsABUC-h2o6yTTQkfB7Wp7gyAPW4PcjbKC3NH52rfdRTpfE1Fpta.jpg?r=f42"
+    },
+    {
+      "id": "44",
+      "name": "Wild Wild Country",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTRwEvj2z_5joWShK9fKRDBFqHwu8BNVFOoruHKH3DSqrrUEWVpQtZJhMCvdIP-6sTirfZZVNZ8EIZNpdO6ebgFxHSKL2RFF7x_d4G1NREPxztb_McDwjF35EALb.jpg?r=3af"
+    },
+    {
+      "id": "45",
+      "name": "World War II in Colour",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS_1tvfIbmNvJnur-vVAn9Vp9TWHOXm12-IAQCNzuUCnScBM_GIliRon0QR9U_6o_TCYiCyB2SufGGBF4vcFQevIy8w.jpg?r=94b"
+    },
+    {
+      "id": "46",
+      "name": "Rise of Empires: Ottoman",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZI-NU_ofY8P4H_i1NwhD9DYN_gG1R3vEHdoXyTt0bk5Zo6QuwyXaBnkZLt-6tjDv5BTwfbdNqKuDGBQwn6NYB6oGxGuJFf6AuRnuW63tLibcfXYwXgVnNZINWoY.jpg?r=841"
+    },
+    {
+      "id": "47",
+      "name": "The Story of Diana",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcAoKzErmYxqa6Z6pAdn_N0eLz0rfYHO9K4Cs-bGvdKdu_o0g-bo2q_6Q018vgmmT3nLuLz9jf5OPyShnoARPnT-fnY.jpg?r=d7e"
+    },
+    {
+      "id": "48",
+      "name": "Real Detective",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWAjRdP61U0mHNGq21ISedfm2i4jjWEiOCSm761gBJYzd8KHzKmpKYz73k9ArU3qWTYbP-QsOcvtbfXlud0rymJyq1w.jpg?r=2ea"
+    },
+    {
+      "id": "49",
+      "name": "Conspiracy",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVLM1LzQIqSxDWR_l0ikHbZ3RQT0vn8-lvS5akeiShTmYlxyv2iEG8vZtaCE88caJvUdzCj8vrPCIK38g0Y65mu2Kws.jpg?r=f79"
+    },
+    {
+      "id": "50",
+      "name": "Explained",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABftYLXEmBSJ2tTbX1rNsJvYXjw4UU8xZifukBU70cHsYM_B6A1RHhVxowg4NX9ViWMhiUKH7AAy7BSsJgM0rrbIwBr1Ipc35mLaQGZfdTL3tFZJbJtPr9CWQ0zrY.jpg?r=f07"
+    },
+    {
+      "id": "51",
+      "name": "Jesus Code",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVqhAyeEM3acuvHnDtC0V6GuA5h2kaiwf156nbWxaAa1bEFEVt-gS4znvolzj7_5PG3I3zyOraSSeZc6v79ncJS8IeM.jpg?r=866"
+    },
+    {
+      "id": "52",
+      "name": "The Surgeon's Cut",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeZpwq61k95eYKTfSqUkiH6t0rZf1EC9D4w11vUGP6KlxwCkqSwSJlaKoFY_RbdQCc_QjRrPltXt6si5KkOOwV1NDaP26aOR6rJdo65bToIIB4ljx7MZS-vr6KFQ.jpg?r=c16"
+    },
+    {
+      "id": "53",
+      "name": "The Secret",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWQYd2615d27ms6M0W9XZNYiYt7LvkIm1BXW9vUnApwljkm_8HzRqj6KFWNH_PYhf-JW_cqz5pa54qemjnCRoUCBBXU.jpg?r=b9f"
+    },
+    {
+      "id": "54",
+      "name": "Surviving Death",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRKf2UqaAlvBE86Fs32_mSAj7kSy-A74ZIHjvbvUOuwVcb7JuEj6l_us0xiYk_Bvs_UjTT6NbShIfIodfDr3_glszw04C4ALEhBFA9e5qmJHNXwxZyKU4MsJpjL0.jpg?r=d0c"
+    },
+    {
+      "id": "55",
+      "name": "Unsolved Mysteries",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXqrVI5SXI0f0zIlj_1eFSy_Qv0KyOGiIX9x4hNA-Sfa-pYpixcQ9JuAwGxriQP4_gQhyli3Cikeh9vkD_oxKvJ2U8JLwyQVsf0zrH2eDO4efy_O4iwq-y33ynJd.jpg?r=ce9"
+    },
+    {
+      "id": "56",
+      "name": "Roman Empire",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXT_JSsNU1xz23H-NHMAuO1C0xSkx6NYmtRGYiQXNtTeEvc-v-BpZIaYF_HldS6ZKaecrRK-SXEgnx93x8hPI1A2jCGiNNn8qA2K63n38X6XUemX_e-cHZxWcPnn.jpg?r=7b2"
+    },
+    {
+      "id": "57",
+      "name": "Inside the Mossad",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbIItLX473jTsRyvuY9qmK2eEr39AvWtxiBK9LnzvcxM014Qyvf22b1xuVZQ2uxkvexf_K-6yRuiqy3I7GQHNF6NVXY.jpg?r=975"
+    },
+    {
+      "id": "58",
+      "name": "Miss Americana",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQm7zJcIAp-bZtOVRMp6uXUNz3tJR6va149ROexn1ADB5hS4TczNSmlmCUd9U3R_ml3ucHGxdIOh5D4rZwNKlyEjxe1A1yGBlMYeqR61UQxDyjq7goiFJQqfifd2.jpg?r=325"
+    },
+    {
+      "id": "59",
+      "name": "Dirty Money",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdkRWuDD9Lkqw4KfnMMfpVfIgIJJMs2_4XrMeRCfpP-FY4klbn4E_eovFIQs3B2ECj6ntDS9dv9JZW8GBRVnW2Nm9Zexr8re8Y8VHzacBmZnDihak4jEnh2ovKvd.jpg?r=ecf"
+    },
+    {
+      "id": "60",
+      "name": "Mind Explained",
+      "genere": "Documentaries",
+      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU5f3CmPEgP01fTzAqjdfR5e-t62AhORFEnv2YmjUshgkWTmFRjNAtpRPjjCG83nt9MVnB71JEoeBnrIn5nynL06CfC8BQXZJnJoyZy_VJEY4Ok2BeM2M7fGK3h_.jpg?r=fa1"
     }
-  ],
-  "genres": [
-    "Comedy",
-    "Fantasy",
-    "Crime",
-    "Drama",
-    "Music",
-    "Adventure",
-    "History",
-    "Thriller",
-    "Animation",
-    "Family",
-    "Mystery",
-    "Biography",
-    "Action",
-    "Film-Noir",
-    "Romance",
-    "Sci-Fi",
-    "War",
-    "Western",
-    "Horror",
-    "Musical",
-    "Sport"
   ]
 }
