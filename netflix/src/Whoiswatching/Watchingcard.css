@@ -4,19 +4,27 @@
     width: 10%;
     height: 20vh;
     margin: 50px;
-    transition: width 1s,height 1s;
+    transition:all .2s ease-in-out;
  
+}
+.Card_container:hover
+{
+    transform: scale(1.2) ;
 }
 .card_img img
 {
-    width: 100%;
+    width: 200px;
     height: fill;
 }
+
 .card_name
 {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    /* background-color: white; */
+    color: white;
+    width: 200px;
 }
 .Card_container:hover
 {

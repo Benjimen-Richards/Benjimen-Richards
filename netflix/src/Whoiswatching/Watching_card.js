@@ -11,9 +11,10 @@ const Watchingcard = (props) => {
                 <div className='card_img'>
                     <img src={props.img.imge} alt='/' />
                 </div>
-                <div className='card_name'>
+                <div className='card_name' style={{ textDecoration: 'none' }} >
                     <h4>{props.img.name}</h4>
-                </div></Link>
+                </div>
+            </Link>
         </div>
     )
 }

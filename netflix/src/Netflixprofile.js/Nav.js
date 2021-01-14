@@ -1,4 +1,4 @@
-import { Link } from "@material-ui/core"
+import { Link } from 'react-router-dom'
 import { Component } from "react"
 import './Css/Profile.css'
 class Profilenav extends Component {

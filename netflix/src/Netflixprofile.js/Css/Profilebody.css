@@ -1,4 +1,32 @@
-.profilebody_container
+
+.series_ccontainer
 {
-    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior:auto;
+}
+
+.series_ccontainer img
+{
+    width: 15%;
+    margin-top: 10px;
+    height: 300px;
+    margin-bottom: 10px;
+    transition:all 0.2s ease-in-out;
+}
+.series_ccontainer img:hover
+{
+    transform: scale(1.2)
+}
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track
+{
+    color: white;
 }

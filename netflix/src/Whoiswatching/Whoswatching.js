@@ -24,11 +24,10 @@ const Whoswatching = () => {
                 <h2>Who's watching Netflix?</h2>
             </div>
             <div className='Watching_card'>
-                <Link to='/profile'></Link>
-                <Watchingcard img={images1} />
-                <Watchingcard img={images2} />
-                <Watchingcard img={images3} />
-                <Watchingcard img={images4} />
+                <Link to='/profile'><Watchingcard img={images1} /></Link>
+                <Link to='/profile'><Watchingcard img={images2} /></Link>
+                <Link to='/profile'><Watchingcard img={images3} /></Link>
+                <Link to='/profile'><Watchingcard img={images4} /></Link>
             </div>
         </div>
     )
