@@ -1,0 +1,40 @@
+.Series_container
+{
+    /* background-color: green; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 50px;
+}
+.Series_searchbar
+{
+    width: 20%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 100px;
+    height: 100vh;
+    
+}
+.Series_searchbar input
+{
+    width: 80%;
+    height: 50px;
+}
+.Seriessearch_results
+{
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.Seriessearch_results img
+{
+    width: 25%;
+    height: 40vh;
+    margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(136, 121, 121, 0.2), 0 6px 20px 0 rgba(201, 183, 183, 0.19);
+}

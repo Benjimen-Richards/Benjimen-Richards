@@ -41,10 +41,11 @@
     width: 15%;
     
 }
-.nav_select option
+.nav_select h3
 {
-    background-color: rgb(49, 46, 46);
+    background-color:transparent;
     border: none;
+    font-size: 20px;
 }
 .nav_select:focus
 {

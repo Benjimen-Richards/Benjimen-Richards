@@ -26,15 +26,16 @@ class Profilenav extends Component {
                         <Link to='/'><img style={{
                             width: '300px', height: '200px'
                         }} src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
-                        <select className='nav_select'>
-                            <option value="none" selected disabled hidden>Series</option>
-                            <option value="none">xyz</option>
-                            <option value="none">xyz</option>
-                            <option value="none">xyz</option>
-                        </select>
-                        <select className='nav_select'>
-                            <option selected disabled hidden>Flims</option>
-                        </select>
+                        <Link to='/series' style={{ textDecoration: 'none' }}>
+                            <div className='nav_select'>
+                                <h3>Series</h3>
+                            </div>
+                        </Link>
+                        <Link to='/flims' style={{ textDecoration: 'none' }}>
+                            <div className='nav_select'>
+                                <h3>Flims</h3>
+                            </div>
+                        </Link>
                     </div>
                     <div className='nav_right'>
                         <h1>Search</h1>
