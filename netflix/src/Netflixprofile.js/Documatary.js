@@ -1,8 +1,9 @@
 import axios from "axios";
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import './Css/Series.css'
 const url = 'http://localhost:1234/movies'
-class Series extends Component {
+class Documantaries extends Component {
     constructor() {
         super()
         this.state = {
@@ -20,7 +21,7 @@ class Series extends Component {
                 filteredseries: filteredseries
             })
         }
-        // console.log('filter', this.state.filteredmovie)
+        console.log('documatary', this.state.filteredmovie)
     }
     rendermovie = (data) => {
         if (data) {
@@ -35,7 +36,7 @@ class Series extends Component {
         return (
             <div className='Series_container'>
                 <div className='Series_searchbar'>
-                    <input placeholder='Search series here' onChange={this.inputhandler} />
+                    <input placeholder='Search Documantaries here' onChange={this.inputhandler} />
                 </div>
                 <div className='Seriessearch_results'>
                     {this.rendermovie(this.state.filteredseries)}
@@ -46,10 +47,10 @@ class Series extends Component {
     componentDidMount() {
         axios.get(url).then(res => {
             this.setState({ movies: res.data })
-            const output = this.state.movies.filter(item => item.genere === 'Series')
+            const output = this.state.movies.filter(item => item.genere === 'Documentaries')
             console.log('output', output)
             this.setState({ series: output })
         })
     }
 }
-export default Series
+export default Documantaries

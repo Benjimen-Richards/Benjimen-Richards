@@ -1,7 +1,9 @@
 import { BrowserRouter, Route } from "react-router-dom"
 import Addjson from "./Addmovies"
 import Mainpage from "./Intropage/Mainpage"
+import Register from "./logincomponents/Register"
 import Signin from "./logincomponents/Signin"
+import Documantaries from "./Netflixprofile.js/Documatary"
 import Flims from "./Netflixprofile.js/Flims"
 import Mainprofile from "./Netflixprofile.js/Mainprofile"
 import Series from "./Netflixprofile.js/Series"
@@ -17,6 +19,8 @@ const Mainrouter = () => {
                 <Route path='/db' component={Addjson} />
                 <Route path='/series' component={Series} />
                 <Route path='/flims' component={Flims} />
+                <Route path='/documantaries' component={Documantaries} />
+                <Route path='/register' component={Register} />
             </BrowserRouter>
         </div>
     )
