@@ -99,9 +99,9 @@ class Profilenav extends Component {
                 </div>
                 <div className='Profile_nav'>
                     <div className='nav_left'>
-                        <Link to='/'><img style={{
+                        <img style={{
                             width: '300px', height: '200px'
-                        }} src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
+                        }} src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img>
                         <Link to='/series' style={{ textDecoration: 'none' }}>
                             <div className='nav_select'>
                                 <h3>Series</h3>

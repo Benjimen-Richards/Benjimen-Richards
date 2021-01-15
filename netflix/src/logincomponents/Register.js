@@ -22,7 +22,7 @@ class Register extends Component {
     }
     submithandler = () => {
         console.log(this.state)
-        // axios.post(registerurl, this.state)
+        axios.post(registerurl, this.state)
         this.setState(
             {
                 name: '',
@@ -35,6 +35,7 @@ class Register extends Component {
 
             }
         )
+        this.props.history.push('/signin')
     }
     render() {
         return (
