@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import { Component } from "react"
 import './Css/Profile.css'
 import axios from 'axios'
@@ -31,7 +31,7 @@ class Profilenav extends Component {
     }
     changehandler = (e) => {
         const keyword = e.target.value
-        console.log(keyword)
+        // console.log(keyword)
         const filterlisting = this.state.movies.filter(item =>
         (
             item.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1
@@ -52,12 +52,24 @@ class Profilenav extends Component {
         axios.post(carturl, cartimage)
 
     }
+    dataselect = (e) => {
+        const id = e.target.id
+        const cartimage = this.state.movies.filter(item =>
+        (
+            parseInt(item.id) === parseInt(id)
+        ))
+        sessionStorage.setItem('movie_name', cartimage[0].name)
+        sessionStorage.setItem('movie_image', cartimage[0].imageurl)
+        sessionStorage.setItem('movie_id', cartimage[0].id)
+        this.props.history.push('/profile')
+        console.log(cartimage)
+    }
     renderlist = (data) => {
         if (data) {
             return (
                 data.map(item =>
                 (
-                    <li key={item.id} > { item.name}</li>
+                    <li id={item.id} onClick={this.dataselect}> { item.name}</li>
                     // console.log(item.name)
                 ))
             )
@@ -125,4 +137,4 @@ class Profilenav extends Component {
     }
 
 }
-export default Profilenav
+export default withRouter(Profilenav)

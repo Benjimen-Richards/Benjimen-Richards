@@ -21,15 +21,18 @@
     display: flex;
     flex-wrap: wrap;
 }
+.dntext h1{
+  border: 1px solid white;
+  min-height: 20px;
+}
 .dntext h3
 {
     line-height: 30px; 
     word-spacing: 10px; 
-
 }
 .dnimage
 {
-    position: relative;
+  position: relative;
   top: 0;
   left: 0;
 }

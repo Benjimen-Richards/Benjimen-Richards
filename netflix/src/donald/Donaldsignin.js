@@ -1,18 +1,17 @@
-import { render } from "@testing-library/react";
-import React, { component } from "react";
+
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Css/Signin.css";
-const burl = "";
-class Signin extends component {
-  constructor() {
-    super();
-
-    this.state = {
-      email: "",
-      password: "",
-      error: "",
-    };
-  }
+// const burl = "alfred";
+class Donaldsignin extends React.Component {
+  // constructor() {
+  //   super()
+  //   this.state = {
+  //     email: "",
+  //     password: "",
+  //     error: "",
+  //   };
+  // }
   handleChangeEmail = (event) => {
     this.setState({ email: event.target.value });
   };
@@ -21,23 +20,23 @@ class Signin extends component {
   };
   handleSubmit = () => {
     console.log(this.state);
-    fetch(burl, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(this.state),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        sessionStorage.setItem("logintoken", data.token);
-        this.props.history.push("/profile");
-        // console.log(data.token);
-      })
-      .catch((err) => {
-        this.setState({ error: "Invalid UserName or Password" });
-      });
+    // fetch(burl, {
+    //   method: "POST",
+    //   headers: {
+    //     Accept: "application/json",
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(this.state),
+    // })
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     sessionStorage.setItem("logintoken", data.token);
+    //     this.props.history.push("/profile");
+    // console.log(data.token);
+    // })
+    // .catch((err) => {
+    //   this.setState({ error: "Invalid UserName or Password" });
+    // });
   };
 
   render() {
@@ -65,20 +64,20 @@ class Signin extends component {
               <label for="email">Email address:</label>
               <input
                 type="email"
-                value={this.state.email}
+                // value={this.state.email}
                 class="form-control"
                 id="email"
-                onChange={this.handleChangeEmail}
+              // onChange={this.handleChangeEmail}
               />
             </div>
             <div class="form-group">
               <label for="pwd">Password:</label>
               <input
                 type="password"
-                value={this.state.password}
+                // value={this.state.password}
                 class="form-control"
                 id="pwd"
-                onChange={this.handleChangePassword}
+              // onChange={this.handleChangePassword}
               />
             </div>
             <div class="checkbox" className="Rememberme">
@@ -112,4 +111,4 @@ class Signin extends component {
   }
 }
 
-export default Signin;
+export default Donaldsignin;

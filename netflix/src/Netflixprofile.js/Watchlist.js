@@ -1,63 +1,52 @@
 import axios from "axios";
-import { Component } from "react";
+
 import './Css/Watchlist.css'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
+import { useState } from "react";
+import { useEffect } from "react";
 const carturl = 'http://localhost:1234/cart'
-class Watchlist extends Component {
-    constructor() {
-        super()
-        this.state = {
-            watchlist: ''
-        }
+const Watchlist = withRouter(props => {
+    const [watchlist, setwatchlist] = useState('')
+    const [update, setupdate] = useState('')
+    useEffect(async () => {
+        await axios.get(carturl).then(res => setwatchlist(res.data))
+    }, [update])
+    // console.log('set', watchlist)
+    const deletehandler = (e) => {
+        // console.log(`${carturl}/${e.target.value}`)
+        axios.delete(`${carturl}/${e.target.value}`).then(res => console.log(res.data))
+        this.props.his
     }
-    deletehandler = (e) => {
-        const value = e.target.value
-        console.log(value)
-        axios.delete(`${carturl}/${e.target.value}`)
-        this.props.history.push('/watchlist')
-        // console.log('data', this.state.watchlist)
-        // axios.get(carturl).then(res => this.setState({ watchlist: res.data }))
-
-    }
-    renderwatchlist = (data) => {
+    const renderwatchlist = (data) => {
         if (data) {
-
             return (
                 data.map((item, idx) => {
-                    // const length = data.length
                     return (
                         <div className='image'>
-                            <img src={item[0].imageurl} style={{ width: '100%', height: '350px', border: 'none' }} alt='netflix image' />
-                            <button value={idx + 1} class="btn btn-success" onClick={this.deletehandler}>delete</button>
+                            <img src={item[0].imageurl} style={{
+                                width: '100%', height: '350px', border: 'none'
+                            }} alt='netflix watchlist' />
+                            <button value={idx + 1} className='btn btn-success' onClick={deletehandler}>delete</button>
                         </div>
                     )
-
-                }
-                )
+                })
             )
         }
     }
-    render() {
-        return (
-            <div>
-                <div className='watchlist_logo'>
-                    <Link to='/profile'><img style={{
-                        width: '300px', height: '200px'
-                    }} src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
-                </div>
-                <div className='watchlist_container'>
-                    <div className='watchlist_display'>
-                        {this.renderwatchlist(this.state.watchlist)}
-                    </div>
+    console.log('props', props)
+    return (
+        <div>
+            <div className='watchlist_logo'>
+                <Link to='/profile'><img style={{
+                    width: '300px', height: '200px'
+                }} src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
+            </div>
+            <div className='watchlist_container'>
+                <div className='watchlist_display'>
+                    {renderwatchlist(watchlist)}
                 </div>
             </div>
-        )
-    }
-    componentDidMount() {
-        axios.get(carturl).then(res => this.setState({ watchlist: res.data }))
-    }
-    componentDidUpdate() {
-        axios.get(carturl).then(res => this.setState({ watchlist: res.data }))
-    }
-}
+        </div >
+    )
+})
 export default Watchlist

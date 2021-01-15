@@ -43,6 +43,10 @@
     padding: 5px;
     /* background-color: rgb(165, 148, 148); */
 }
+.nav_right input:focus
+{
+    outline: none;
+}
 .nav_search
 {
     position: relative;

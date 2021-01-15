@@ -1,35 +1,36 @@
 .bdycontainer
 {
-    box-sizing: border-box;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     color: white;
-    justify-content: space-evenly;
-    height: auto;
     padding:50px;
     margin-bottom: 5px;
+    /* border: 1px solid blue; */
+    min-height: 50vh;
+    justify-content: space-around;
 }
-.text
+
+.text_container
 {
-    width: 50vh;
-    display: flex;
-    flex-wrap: wrap;
+  /* border: 1px solid green; */
+  width: 30%;
 }
-.text h3
+.text_container h3
 {
-    line-height: 30px; 
+      line-height: 30px; 
     word-spacing: 10px;  
 }
 .bdyimage img
 {
-    
     width: 400px;
     height: 300px;
+    /* border:1px solid white; */
 }
 .bdyimage
 {
-    position: relative;
+  position: relative;
   top: 0;
   left: 0;
 }

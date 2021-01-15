@@ -1,18 +1,18 @@
-import { component } from "react";
+
+import { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Css/Register.css";
-
-const url = "";
-class Register extends component {
-  constructor() {
-    super();
-    this.state = {
-      name: "",
-      email: "",
-      password: "",
-      error: "",
-    };
-  }
+// const url = "donald";
+class Donaldregister extends Component {
+  // constructor() {
+  //   super()
+  //   this.state = {
+  //     name: "",
+  //     email: "",
+  //     password: "",
+  //     error: "",
+  //   };
+  // }
 
   changeHanderName = (e) => {
     this.setState({ name: e.target.value });
@@ -30,16 +30,16 @@ class Register extends component {
       this.state.email > 10 &&
       this.state.password > 0
     ) {
-      fetch(url, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(this.state),
-      });
-      this.props.history.push("/login");
-      localStorage.setItem("username", this.state.name);
+      // fetch(url, {
+      //   method: "POST",
+      //   headers: {
+      //     Accept: "application/json",
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(this.state),
+      // });
+      // this.props.history.push("/login");
+      // localStorage.setItem("username", this.state.name);
     } else {
       this.setState({ error: "Please enter valid credential" });
     }
@@ -81,7 +81,7 @@ class Register extends component {
                 className="form-control"
                 value={this.state.email}
                 id="phone"
-                onChange={this.changeHanderEmail}
+              // onChange={this.changeHanderEmail}
               />
             </div>
             <div class="form-group">
@@ -91,7 +91,7 @@ class Register extends component {
                 className="form-control"
                 id="phone"
                 value={this.state.password}
-                onChange={this.changeHanderPassword}
+              // onChange={this.changeHanderPassword}
               />
             </div>
 
@@ -120,4 +120,4 @@ class Register extends component {
     );
   }
 }
-export default Register;
+export default Donaldregister;
