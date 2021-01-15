@@ -4,8 +4,12 @@ const Watch = () => {
     return (
         <div className='wthcontainer'>
             <div className='wthtext'>
-                <h1>Watch everywhere.</h1>
-                <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+                <div className='watchh1'>
+                    <h1>Watch everywhere.</h1>
+                </div>
+                <div className='watchh3'>
+                    <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+                </div>
             </div>
             <div className='wthimage'>
                 <img className='wthimg1'

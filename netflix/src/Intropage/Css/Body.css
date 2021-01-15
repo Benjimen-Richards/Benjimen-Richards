@@ -14,13 +14,22 @@
 
 .text_container
 {
-  /* border: 1px solid green; */
-  width: 30%;
+  max-width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: start;
 }
-.text_container h3
+.texth1 h1
 {
-      line-height: 30px; 
-    word-spacing: 10px;  
+  line-height: 40px;
+}
+.texth3 h3
+{
+  line-height: 30px;
+  word-spacing: 5px;
 }
 .bdyimage img
 {

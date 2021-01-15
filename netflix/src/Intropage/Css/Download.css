@@ -17,19 +17,25 @@
 }
 .dntext
 {
-    width: 50vh;
+    max-width: 60vh;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: start;
+    /* border: 1px solid white; */
 }
-.dntext h1{
-  border: 1px solid white;
-  min-height: 20px;
-}
-.dntext h3
+.dnh1 h1
 {
-    line-height: 30px; 
-    word-spacing: 10px; 
+  line-height: 40px;
 }
+.d1h3 h3
+{
+  line-height: 30px;
+  word-spacing: 5px;
+}
+
 .dnimage
 {
   position: relative;

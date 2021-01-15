@@ -17,9 +17,14 @@ class Profilenav extends Component {
         }
     }
     logouthandler = () => {
+        sessionStorage.removeItem('movie_name')
+        sessionStorage.removeItem('movie_image')
+        sessionStorage.removeItem('movie_id')
         sessionStorage.removeItem('profile_name')
         sessionStorage.removeItem('profile_image')
-        this.props.history.push('/')
+        sessionStorage.removeItem('logintoken')
+        sessionStorage.removeItem('token')
+        this.props.history.push('/signin')
     }
 
     visiblehandler = () => {
@@ -32,14 +37,18 @@ class Profilenav extends Component {
     changehandler = (e) => {
         const keyword = e.target.value
         // console.log(keyword)
-        const filterlisting = this.state.movies.filter(item =>
-        (
-            item.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1
-        ))
-        console.log(filterlisting)
-        this.setState({
-            listdata: filterlisting
-        })
+        if (this.state.movies) {
+            const filterlisting = this.state.movies.filter(item =>
+            (
+                item.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1
+            ))
+            console.log(filterlisting)
+            this.setState({
+                listdata: filterlisting
+            })
+        }
+
+
     }
     idhandler = (e) => {
         const value = e.target.id
@@ -121,7 +130,7 @@ class Profilenav extends Component {
                                 <div className="w3-center w3-animate-top">
                                     <li><Link to='/userprofile' style={{ textDecoration: "none" }}> Hi {sessionStorage.getItem('profile_name')}</Link></li>
                                     <li><Link to='/watchlist' style={{ textDecoration: "none" }}>Watchlist</Link></li>
-                                    <li>logout</li>
+                                    <li onClick={this.logouthandler}>logout</li>
                                 </div></div>}
                         </div>
                     </div>

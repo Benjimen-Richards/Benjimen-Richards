@@ -3,7 +3,7 @@
 {
     position: relative;
     box-sizing: border-box;
-    height: auto;
+    min-height: 100vh;
 }
 .signinbackgrd img
 {
@@ -29,7 +29,7 @@
     margin-left: 35%;
     padding: 70px;
     padding-top: 100px;
-    height: 70%;
+    min-height: 60%;
     font-size: 34px;
     overflow:hidden;
 }
@@ -41,7 +41,7 @@
     opacity: 0.9;
     top: 20%;
     width: 30%;
-    height: 70%;
+    min-height: 60%;
     display: flex;
     flex-wrap: wrap;
     margin-left: 35%;
@@ -56,7 +56,8 @@
 }
 .a
 {
-    width: 100%;
+    width: 50%;
+    margin-left:25%;
     display: flex;
     justify-content: center;
 }

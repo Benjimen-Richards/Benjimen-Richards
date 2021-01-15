@@ -4,8 +4,12 @@ const Body = () => {
     return (
         <div className='bdycontainer'>
             <div className='text_container'>
-                <h1>Enjoy on your TV.</h1>
-                <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
+                <div className='texth1'>
+                    <h1>Enjoy on your TV.</h1>
+                </div>
+                <div className='texth3'>
+                    <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
+                </div>
             </div>
             <div className='bdyimage'>
                 <img className='img1' src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png' alt='/'></img>

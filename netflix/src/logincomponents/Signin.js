@@ -30,7 +30,7 @@ class Signin extends Component {
             .then((res) => res.json())
             .then((data) => {
                 sessionStorage.setItem('logintoken', data.token);
-                this.props.history.push('/profile')
+                this.props.history.push('/watching')
             })
             .catch((err) => {
                 this.setState({ registererror: "Invalid UserName or Password" })

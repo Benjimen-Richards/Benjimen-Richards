@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import './Watchingcard.css'
 const Watchingcard = (props) => {
     const Setprofile = () => {

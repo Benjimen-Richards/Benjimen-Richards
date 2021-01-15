@@ -25,6 +25,7 @@ class Mainprofile extends Component {
             .then((res) => res.json())
             .then((data) => {
                 console.log('success')
+                sessionStorage.setItem('token', 'received')
             })
     }
 }

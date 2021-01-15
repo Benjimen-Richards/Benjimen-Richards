@@ -23,21 +23,24 @@ class Profilebody extends Component {
     }
     selecthandler = (e) => {
         const id = e.target.id
-        const cartimage = this.state.movies.filter(item =>
-        (
-            parseInt(item.id) === parseInt(id)
-        ))
-        sessionStorage.setItem('movie_name', cartimage[0].name)
-        sessionStorage.setItem('movie_image', cartimage[0].imageurl)
-        sessionStorage.setItem('movie_id', cartimage[0].id)
-        console.log(cartimage[0])
-        window.scrollTo({ top: 0 })
-        // axios.post(carturl, cartimage)
-        this.props.history.push('/profile')
+        if (this.state.movies) {
+            const cartimage = this.state.movies.filter(item =>
+            (
+                parseInt(item.id) === parseInt(id)
+            ))
+            sessionStorage.setItem('movie_name', cartimage[0].name)
+            sessionStorage.setItem('movie_image', cartimage[0].imageurl)
+            sessionStorage.setItem('movie_id', cartimage[0].id)
+            console.log(cartimage[0])
+            window.scrollTo({ top: 0 })
+            axios.post(carturl, cartimage)
+            this.props.history.push('/profile')
+        }
     }
     render() {
-
-        // console.log('state', this.state.movies)
+        if (sessionStorage.getItem('token') == null) {
+            this.props.history.push('/signin')
+        }
         return (
             <div className='profilebody_container'>
                 <h3>Trending now</h3>
@@ -58,12 +61,14 @@ class Profilebody extends Component {
     componentDidMount() {
         axios.get(url).then(res => {
             this.setState({ movies: res.data })
-            const output = this.state.movies.filter(item => item.genere === 'Series')
-            // console.log('output', output)
-            this.setState({ series: output })
-            const document = this.state.movies.filter(item => item.genere === 'Documentaries')
-            // console.log('output', output)
-            this.setState({ documentaries: document })
+            if (this.state.movies) {
+                const output = this.state.movies.filter(item => item.genere === 'Series')
+                // console.log('output', output)
+                this.setState({ series: output })
+                const document = this.state.movies.filter(item => item.genere === 'Documentaries')
+                // console.log('output', output)
+                this.setState({ documentaries: document })
+            }
         }
         )
 

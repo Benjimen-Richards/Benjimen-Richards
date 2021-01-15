@@ -12,8 +12,12 @@ const Download = () => {
                     src='https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif' alt='/'></img>
             </div>
             <div className='dntext'>
-                <h1>Download your shows to watch offline.</h1>
-                <h3>Save your favourites easily and always have something to watch.</h3>
+                <div className='dnh1'>
+                    <h1>Download your shows to watch offline.</h1>
+                </div>
+                <div className='d1h3'>
+                    <h3>Save your favourites easily and always have something to watch.</h3>
+                </div>
             </div>
 
         </div>

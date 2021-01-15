@@ -12,14 +12,22 @@
 }
 .wthtext
 {
-    width: 50vh;
-    display: flex;
-    flex-wrap: wrap;
+  max-width: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: start;
 }
-.wthtext h3
+.watchh1 h1
 {
-    line-height: 30px; 
-    word-spacing: 10px;  
+  line-height: 40px;
+}
+.watchh3 h3
+{
+  line-height: 30px;
+  word-spacing: 5px;
 }
 .wthimage img
 {
