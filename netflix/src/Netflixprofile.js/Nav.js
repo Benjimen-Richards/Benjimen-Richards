@@ -43,7 +43,8 @@ class Profilenav extends Component {
     }
     idhandler = (e) => {
         const value = e.target.id
-        console.log(value)
+        // console.log(value)
+        // console.log(this.state.movies)
         const cartimage = this.state.movies.filter(item =>
         (
             parseInt(item.id) === parseInt(value)
@@ -77,7 +78,7 @@ class Profilenav extends Component {
         }
     }
     render() {
-        // console.log('state', this.state)
+        // console.log(this.state.movies)
         return (
             <div className='profile_container'>
                 <div className='background_img'>

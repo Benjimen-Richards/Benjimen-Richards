@@ -29,8 +29,7 @@ const Mainrouter = () => {
                 <Route path='/practice' component={Practice} />
                 <Route path='/watchlist' component={Watchlist} />
                 <Route path='/userprofile' component={Userprofile} />
-                <Route path='/donaldr' component={Donaldregister} />
-                <Route path='/donaldrs' component={Donaldsignin} />
+
             </BrowserRouter>
         </div>
     )

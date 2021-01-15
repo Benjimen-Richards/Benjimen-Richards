@@ -1,11 +1,11 @@
 import axios from "axios";
-
 import './Css/Watchlist.css'
-import { Link, withRouter } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { useState } from "react";
 import { useEffect } from "react";
 const carturl = 'http://localhost:1234/cart'
-const Watchlist = withRouter(props => {
+const Watchlist = () => {
+    const history = useHistory();
     const [watchlist, setwatchlist] = useState('')
     const [update, setupdate] = useState('')
     useEffect(async () => {
@@ -13,9 +13,9 @@ const Watchlist = withRouter(props => {
     }, [update])
     // console.log('set', watchlist)
     const deletehandler = (e) => {
-        // console.log(`${carturl}/${e.target.value}`)
-        axios.delete(`${carturl}/${e.target.value}`).then(res => console.log(res.data))
-        this.props.his
+        // console.log(e)
+        axios.delete(`${carturl}/${e.target.value}`).then(res => setupdate(res.data))
+
     }
     const renderwatchlist = (data) => {
         if (data) {
@@ -26,14 +26,14 @@ const Watchlist = withRouter(props => {
                             <img src={item[0].imageurl} style={{
                                 width: '100%', height: '350px', border: 'none'
                             }} alt='netflix watchlist' />
-                            <button value={idx + 1} className='btn btn-success' onClick={deletehandler}>delete</button>
+                            <button key={idx} value={idx + 1} className='btn btn-success' onClick={deletehandler}>delete</button>
                         </div>
                     )
                 })
             )
         }
     }
-    console.log('props', props)
+    // console.log('props', props)
     return (
         <div>
             <div className='watchlist_logo'>
@@ -48,5 +48,5 @@ const Watchlist = withRouter(props => {
             </div>
         </div >
     )
-})
+}
 export default Watchlist

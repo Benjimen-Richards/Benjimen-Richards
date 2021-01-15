@@ -1,50 +1,14 @@
-/* .signincontainer
-{
- background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/9a818ce7-5b19-4a0a-8bec-e4a233c8661b/8a09c2e9-b912-4286-8836-706712bdad61/IN-en-20210104-popsignuptwoweeks-perspective_alpha_website_small.jpg');
- background-size: fill;
- height: 100vh;
- position: relative;
-}
-.form1
-{
-    position: absolute;
-    background-color: black;
-    opacity: 0.9;
-    width: 30%;
-    height: 70vh;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 35%;
-    border-radius: 10px;
-  
-}
-.form2
-{
-    position: absolute;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin-left: 35%;
-    padding: 70px;
-    padding-top: 100px;
-    height: 70vh;
-    font-size: 24px;
-}
-.form2 input
-{
-    border: none;
-} */
 
 .sigincontainer
 {
     position: relative;
     box-sizing: border-box;
+    height: auto;
 }
 .signinbackgrd img
 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     opacity: 0.7;
 }
 .signinlogo
