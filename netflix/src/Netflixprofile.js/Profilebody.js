@@ -1,6 +1,7 @@
 import { Component } from "react"
 import axios from 'axios'
 import './Css/Profilebody.css'
+import { withRouter } from "react-router"
 const url = 'http://localhost:1234/movies'
 const carturl = 'http://localhost:1234/cart'
 class Profilebody extends Component {
@@ -26,10 +27,14 @@ class Profilebody extends Component {
         (
             parseInt(item.id) === parseInt(id)
         ))
-        console.log('cartimage', cartimage)
-        axios.post(carturl, cartimage)
+        sessionStorage.setItem('movie_name', cartimage[0].name)
+        sessionStorage.setItem('movie_image', cartimage[0].imageurl)
+        sessionStorage.setItem('movie_id', cartimage[0].id)
+        console.log(cartimage[0])
+        window.scrollTo({ top: 0 })
+        // axios.post(carturl, cartimage)
+        this.props.history.push('/profile')
     }
-
     render() {
 
         // console.log('state', this.state.movies)
@@ -66,4 +71,4 @@ class Profilebody extends Component {
 
     }
 }
-export default Profilebody
+export default withRouter(Profilebody)

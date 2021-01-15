@@ -1,12 +1,17 @@
 import { Link } from 'react-router-dom'
 import { Component } from "react"
 import './Css/Profile.css'
+import axios from 'axios'
+const url = 'http://localhost:1234/movies'
+const carturl = 'http://localhost:1234/cart'
 class Profilenav extends Component {
     constructor() {
         super()
         this.state = {
             name: '',
-            image: ''
+            image: '',
+            visible: true,
+            movies: ''
         }
     }
     logouthandler = () => {
@@ -14,12 +19,31 @@ class Profilenav extends Component {
         sessionStorage.removeItem('profile_image')
         this.props.history.push('/')
     }
+
+    visiblehandler = () => {
+        this.setState({ visible: !this.state.visible })
+    }
+    idhandler = (e) => {
+        const value = e.target.id
+        console.log(value)
+        const cartimage = this.state.movies.filter(item =>
+        (
+            parseInt(item.id) === parseInt(value)
+        ))
+        console.log(cartimage)
+        axios.post(carturl, cartimage)
+
+    }
     render() {
         console.log('state', this.state)
         return (
             <div className='profile_container'>
                 <div className='background_img'>
-                    <img src='https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg' alt='joker' />
+                    <img src={sessionStorage.getItem('movie_image')} alt='joker' />
+                </div>
+                <div className='backgroundimg_text'>
+                    <h1>{sessionStorage.getItem('movie_name')}</h1>
+                    <button id={sessionStorage.getItem('movie_id')} onClick={this.idhandler} className=''>Add to watchlist</button>
                 </div>
                 <div className='Profile_nav'>
                     <div className='nav_left'>
@@ -39,15 +63,20 @@ class Profilenav extends Component {
                     </div>
                     <div className='nav_right'>
                         <h1>Search</h1>
-                        <img src={this.state.image} alt='/' />
-                        <Link to='/watchlist'>
-                            <h2>Watchlist</h2>
-                        </Link>
+                        <div className='navimage_container'>
+                            <div className='navuser_image' onClick={this.visiblehandler}>
+                                <img src={this.state.image} alt='/' />
+                            </div>
+                            {this.state.visible && <div className='navimage_list' >
+                                <div className="w3-center w3-animate-top">
+                                    <li>Hi {sessionStorage.getItem('profile_name')}</li>
+                                    <li><Link to='/watchlist' style={{ textDecoration: "none" }}>Watchlist</Link></li>
+                                    <li>logout</li>
+                                </div></div>}
+                        </div>
                     </div>
-                </div>
-
-            </div >
-
+                </div >
+            </div>
         )
     }
     componentDidMount() {
@@ -55,7 +84,8 @@ class Profilenav extends Component {
             name: sessionStorage.getItem('profile_name'),
             image: sessionStorage.getItem('profile_image')
         })
-
+        axios.get(url).then(res => { this.setState({ movies: res.data }) })
     }
+
 }
 export default Profilenav

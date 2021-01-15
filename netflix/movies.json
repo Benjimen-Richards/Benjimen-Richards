@@ -361,54 +361,5 @@
       "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU5f3CmPEgP01fTzAqjdfR5e-t62AhORFEnv2YmjUshgkWTmFRjNAtpRPjjCG83nt9MVnB71JEoeBnrIn5nynL06CfC8BQXZJnJoyZy_VJEY4Ok2BeM2M7fGK3h_.jpg?r=fa1"
     }
   ],
-  "cart": [
-    [
-      {
-        "id": "5",
-        "name": "The Walking Dead",
-        "genere": "Series",
-        "imageurl": "https://i.pinimg.com/236x/da/dc/6f/dadc6f126e8d104819702b2c43de128a.jpg"
-      }
-    ],
-    [
-      {
-        "id": "4",
-        "name": "Santa Clarita Diet",
-        "genere": "Series",
-        "imageurl": "https://i.pinimg.com/236x/73/61/d3/7361d3497d657b3cae93eb3b41d2d7ed.jpg"
-      }
-    ],
-    [
-      {
-        "id": "3",
-        "name": "Glitch",
-        "genere": "Series",
-        "imageurl": "https://i.pinimg.com/236x/51/93/99/51939967ed93995d55340608884e0e32.jpg"
-      }
-    ],
-    [
-      {
-        "id": "2",
-        "name": "Between",
-        "genere": "Series",
-        "imageurl": "https://i.pinimg.com/236x/dd/aa/94/ddaa943e3f8ae8a4633f1d5a92477f21.jpg"
-      }
-    ],
-    [
-      {
-        "id": "1",
-        "name": "Riverdale",
-        "genere": "Series",
-        "imageurl": "https://i.pinimg.com/236x/ef/87/07/ef8707c0d1a39404c07450de32a8b83d.jpg"
-      }
-    ],
-    [
-      {
-        "id": "6",
-        "name": "A Series of unfortunatee Evenets",
-        "genere": "Series",
-        "imageurl": "https://i.pinimg.com/236x/2d/f0/51/2df05181879bdfa7c843836a64e28bbb.jpg"
-      }
-    ]
-  ]
+  "cart": []
 }
