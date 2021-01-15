@@ -10,8 +10,10 @@ class Profilenav extends Component {
         this.state = {
             name: '',
             image: '',
-            visible: true,
-            movies: ''
+            visible: '',
+            movies: '',
+            selectvisible: '',
+            listdata: ''
         }
     }
     logouthandler = () => {
@@ -22,6 +24,22 @@ class Profilenav extends Component {
 
     visiblehandler = () => {
         this.setState({ visible: !this.state.visible })
+    }
+    inputvisiblehandler = () => {
+        this.setState({ selectvisible: !this.state.selectvisible })
+
+    }
+    changehandler = (e) => {
+        const keyword = e.target.value
+        console.log(keyword)
+        const filterlisting = this.state.movies.filter(item =>
+        (
+            item.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1
+        ))
+        console.log(filterlisting)
+        this.setState({
+            listdata: filterlisting
+        })
     }
     idhandler = (e) => {
         const value = e.target.id
@@ -34,8 +52,20 @@ class Profilenav extends Component {
         axios.post(carturl, cartimage)
 
     }
+    renderlist = (data) => {
+        if (data) {
+            return (
+                data.map(item =>
+                (
+                    <li key={item.id} > { item.name}</li>
+                    // console.log(item.name)
+                ))
+            )
+            // console.log(data)
+        }
+    }
     render() {
-        console.log('state', this.state)
+        // console.log('state', this.state)
         return (
             <div className='profile_container'>
                 <div className='background_img'>
@@ -62,14 +92,21 @@ class Profilenav extends Component {
                         </Link>
                     </div>
                     <div className='nav_right'>
-                        <h1>Search</h1>
+                        <div className='nav_search'>
+                            <input placeholder='search data here' onClick={this.inputvisiblehandler} onChange={this.changehandler} />
+                            {
+                                this.state.selectvisible && <div className='navsearch_list'>
+                                    {this.renderlist(this.state.listdata)}
+                                </div>
+                            }
+                        </div>
                         <div className='navimage_container'>
                             <div className='navuser_image' onClick={this.visiblehandler}>
                                 <img src={this.state.image} alt='/' />
                             </div>
                             {this.state.visible && <div className='navimage_list' >
                                 <div className="w3-center w3-animate-top">
-                                    <li>Hi {sessionStorage.getItem('profile_name')}</li>
+                                    <li><Link to='/userprofile' style={{ textDecoration: "none" }}> Hi {sessionStorage.getItem('profile_name')}</Link></li>
                                     <li><Link to='/watchlist' style={{ textDecoration: "none" }}>Watchlist</Link></li>
                                     <li>logout</li>
                                 </div></div>}

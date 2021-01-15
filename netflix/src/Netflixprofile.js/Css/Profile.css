@@ -35,6 +35,33 @@
     display: flex;
     padding: 10px;
 }
+.nav_right input
+{
+    height: 70%;
+    width: 70%;
+    border-radius: 25px;
+    padding: 5px;
+    /* background-color: rgb(165, 148, 148); */
+}
+.nav_search
+{
+    position: relative;
+}
+.navsearch_list
+{
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: start;
+    list-style: none;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: honeydew;
+    min-width: 200px;
+    flex-wrap: wrap;
+    color: black;
+}
 .nav_select
 {
     background-color:transparent;
