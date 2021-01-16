@@ -15,6 +15,7 @@ class Mainprofile extends Component {
             </div>
         )
     }
+
     componentDidMount() {
         fetch(url, {
             method: 'GET',

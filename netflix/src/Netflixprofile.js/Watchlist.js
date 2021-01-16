@@ -1,19 +1,16 @@
 import axios from "axios";
 import './Css/Watchlist.css'
-import { Link, useHistory } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import { useState } from "react";
 import { useEffect } from "react";
 const carturl = 'http://localhost:1234/cart'
 const Watchlist = () => {
-    const history = useHistory();
     const [watchlist, setwatchlist] = useState('')
     const [update, setupdate] = useState('')
     useEffect(async () => {
         await axios.get(carturl).then(res => setwatchlist(res.data))
     }, [update])
-    // console.log('set', watchlist)
     const deletehandler = (e) => {
-        // console.log(e)
         axios.delete(`${carturl}/${e.target.value}`).then(res => setupdate(res.data))
 
     }
@@ -33,7 +30,6 @@ const Watchlist = () => {
             )
         }
     }
-    // console.log('props', props)
     return (
         <div>
             <div className='watchlist_logo'>
@@ -48,5 +44,6 @@ const Watchlist = () => {
             </div>
         </div >
     )
+
 }
 export default Watchlist

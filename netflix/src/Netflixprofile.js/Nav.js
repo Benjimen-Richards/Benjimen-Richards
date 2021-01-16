@@ -23,7 +23,7 @@ class Profilenav extends Component {
         sessionStorage.removeItem('profile_name')
         sessionStorage.removeItem('profile_image')
         sessionStorage.removeItem('logintoken')
-        sessionStorage.removeItem('token')
+        sessionStorage.removeItem('logintoken')
         this.props.history.push('/signin')
     }
 
@@ -97,7 +97,7 @@ class Profilenav extends Component {
                     <h1>{sessionStorage.getItem('movie_name')}</h1>
                     <button id={sessionStorage.getItem('movie_id')} onClick={this.idhandler} className=''>Add to watchlist</button>
                 </div>
-                <div className='Profile_nav'>
+                <div className='Profile_nav' >
                     <div className='nav_left'>
                         <img style={{
                             width: '300px', height: '200px'
@@ -110,6 +110,11 @@ class Profilenav extends Component {
                         <Link to='/flims' style={{ textDecoration: 'none' }}>
                             <div className='nav_select'>
                                 <h3>Flims</h3>
+                            </div>
+                        </Link>
+                        <Link to='/documantaries' style={{ textDecoration: 'none' }}>
+                            <div className='nav_select'>
+                                <h3>documantaries</h3>
                             </div>
                         </Link>
                     </div>

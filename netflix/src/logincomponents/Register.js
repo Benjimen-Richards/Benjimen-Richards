@@ -20,6 +20,7 @@ class Register extends Component {
     changehandler = (e) => {
         this.setState({ [e.target.name]: e.target.value })
     }
+
     submithandler = () => {
         console.log(this.state)
         axios.post(registerurl, this.state)
@@ -78,6 +79,11 @@ class Register extends Component {
                 </div>
             </div>
         )
+    }
+    componentDidMount() {
+        if (sessionStorage.getItem('register_email')) {
+            this.setState({ email: sessionStorage.getItem('register_email') })
+        }
     }
 }
 export default Register

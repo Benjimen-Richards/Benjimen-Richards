@@ -35,23 +35,24 @@ class Profilebody extends Component {
             window.scrollTo({ top: 0 })
             axios.post(carturl, cartimage)
             this.props.history.push('/profile')
+
         }
     }
     render() {
-        if (sessionStorage.getItem('token') == null) {
+        if (sessionStorage.getItem('logintoken') === null) {
             this.props.history.push('/signin')
         }
         return (
             <div className='profilebody_container'>
-                <h3>Trending now</h3>
+                <h3 style={{ marginLeft: '20px', fontWeight: 'bold' }}>Trending now</h3>
                 <div className='series_ccontainer' >
                     {this.renderseries(this.state.movies.slice(40, 55))}
                 </div>
-                <h3>Series</h3>
-                <div className='series_ccontainer' onScroll={this.onMouseMove}>
+                <h3 style={{ marginLeft: '20px', fontWeight: 'bold' }}>Series</h3>
+                <div className='series_ccontainer'>
                     {this.renderseries(this.state.series)}
                 </div>
-                <h3>Documentaries</h3>
+                <h3 style={{ marginLeft: '20px', fontWeight: 'bold' }}>Documentaries</h3>
                 <div className='series_ccontainer'>
                     {this.renderseries(this.state.documentaries)}
                 </div>
@@ -71,8 +72,6 @@ class Profilebody extends Component {
             }
         }
         )
-
-
 
     }
 }

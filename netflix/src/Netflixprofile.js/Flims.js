@@ -32,6 +32,9 @@ class Flims extends Component {
 
     }
     render() {
+        if (sessionStorage.getItem('logintoken') === null) {
+            this.props.history.push('/signin')
+        }
         return (
             <div className='Series_container'>
                 <div className='Series_searchbar'>
@@ -46,10 +49,13 @@ class Flims extends Component {
     componentDidMount() {
         axios.get(url).then(res => {
             this.setState({ movies: res.data })
-            const output = this.state.movies.filter(item => item.genere === 'Movies')
-            console.log('output', output)
-            this.setState({ series: output })
+            if (this.state.movies) {
+                const output = this.state.movies.filter(item => item.genere === 'Movies')
+                console.log('output', output)
+                this.setState({ series: output })
+            }
         })
+
     }
 }
 export default Flims

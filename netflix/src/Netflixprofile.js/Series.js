@@ -8,7 +8,8 @@ class Series extends Component {
         super()
         this.state = {
             series: '',
-            filteredseries: ''
+            filteredseries: '',
+            hoverimage: ''
         }
     }
     inputhandler = (e) => {
@@ -21,29 +22,42 @@ class Series extends Component {
                 filteredseries: filteredseries
             })
         }
-        // console.log('filter', this.state.filteredmovie)
     }
     selecthandler = (e) => {
-        console.log(e.target.value)
+        const value = e.target.id
+        console.log(value)
+        axios.get(`${url}/${value}`).then(res => this.setState({ hoverimage: res.data }))
+        console.log(this.state.hoverimage)
     }
     rendermovie = (data) => {
         if (data) {
             return (
-                data.map(item => (< img src={item.imageurl} id={item.id} onClick={this.selecthandler} alt='netflix images' />)
-                )
-            )
+                data.map(item => {
+                    return (
+                        < img src={item.imageurl} id={item.id} onClick={this.selecthandler} alt='netflix images' />
+
+
+                    )
+                }
+                ))
         }
-
     }
-    render() {
 
+
+    render() {
+        if (sessionStorage.getItem('logintoken') === null) {
+            this.props.history.push('/signin')
+        }
         return (
             <div className='Series_container'>
+
                 <div className='Series_searchbar'>
                     <input placeholder='Search series here' onChange={this.inputhandler} />
                 </div>
                 <div className='Seriessearch_results'>
                     {this.rendermovie(this.state.filteredseries)}
+
+
                 </div>
             </div>
         )
@@ -51,9 +65,12 @@ class Series extends Component {
     componentDidMount() {
         axios.get(url).then(res => {
             this.setState({ movies: res.data })
-            const output = this.state.movies.filter(item => item.genere === 'Series')
-            console.log('output', output)
-            this.setState({ series: output })
+            if (this.state.movies) {
+                const output = this.state.movies.filter(item => item.genere === 'Series')
+                console.log('output', output)
+                this.setState({ series: output })
+            }
+
         })
     }
 }

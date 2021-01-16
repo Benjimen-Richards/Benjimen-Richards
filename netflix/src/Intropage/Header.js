@@ -40,5 +40,9 @@ class Header extends Component {
             </div >
         )
     }
+    componentDidMount() {
+        sessionStorage.removeItem('register_email')
+    }
+
 }
 export default withRouter(Header)
