@@ -90,12 +90,15 @@ class Profilenav extends Component {
         // console.log(this.state.movies)
         return (
             <div className='profile_container'>
-                <div className='background_img'>
-                    <img src={sessionStorage.getItem('movie_image')} alt='joker' />
-                </div>
-                <div className='backgroundimg_text'>
-                    <h1>{sessionStorage.getItem('movie_name')}</h1>
-                    <button id={sessionStorage.getItem('movie_id')} onClick={this.idhandler} className=''>Add to watchlist</button>
+
+                <div>
+                    <div className='background_img'>
+                        <img src={sessionStorage.getItem('movie_image')} alt='joker' />
+                    </div>
+                    <div className='backgroundimg_text'>
+                        <h1>{sessionStorage.getItem('movie_name')}</h1>
+                        <button id={sessionStorage.getItem('movie_id')} onClick={this.idhandler} className=''>Add to watchlist</button>
+                    </div>
                 </div>
                 <div className='Profile_nav' >
                     <div className='nav_left'>

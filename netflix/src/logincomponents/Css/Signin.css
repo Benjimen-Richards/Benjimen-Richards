@@ -8,8 +8,8 @@
 .signinbackgrd img
 {
     width: 100%;
-    min-height: 100vh;
-    opacity: 0.7;
+    min-height: 150vh;
+    opacity: 0.5;
 }
 .signinlogo
 {
@@ -19,40 +19,28 @@
 }
 .form2
 {
+    background-color: rgba(0,0,0,.75);
     box-sizing: border-box;
     position: absolute;
-    top: 20%;
+    top: 150px;
+    left: 35%;
     width: 30%;
     display: flex;
     flex-direction: column;
-    color: white;
-    margin-left: 35%;
-    padding: 70px;
-    padding-top: 100px;
-    min-height: 60%;
-    font-size: 34px;
-    overflow:hidden;
+    padding: 60px 68px 40px;
+    margin-bottom: 90px;
+    min-height: 650px;
+    font-size: 34px; 
+   border-radius: 10px;
+    
 }
-.form1
-{
-    box-sizing: border-box;
-    position: absolute;
-    background-color: black;
-    opacity: 0.9;
-    top: 20%;
-    width: 30%;
-    min-height: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 35%;
-    border-radius: 10px;
-  
-}
+
 #sigin_button
 {
     color: white;
     background-color: red;
-    width: 120%
+    width: 120%;
+    margin-top: 20px;
 }
 .a
 {
@@ -60,4 +48,39 @@
     margin-left:25%;
     display: flex;
     justify-content: center;
+}
+.footer
+{
+    position: absolute;
+    top:68%;
+    background: rgba(0,0,0,.75);
+    font-size: 1em;
+    height:max-content;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 80px;
+}
+.signin_text h4
+{
+    background-color: blanchedalmond;
+}
+.form2 input
+{
+    height: 7vh;
+}
+.registerbutton
+{
+    color: white;text-decoration: none; 
+    transition:all 0.2s ease-in-out;
+}
+.selectlang
+{
+    margin-left: 50px;
+    margin-top: 30px;
+    outline: hidden;
+}
+.selectlang select
+{
+    outline: hidden;
 }

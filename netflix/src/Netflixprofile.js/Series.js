@@ -35,8 +35,6 @@ class Series extends Component {
                 data.map(item => {
                     return (
                         < img src={item.imageurl} id={item.id} onClick={this.selecthandler} alt='netflix images' />
-
-
                     )
                 }
                 ))
@@ -50,7 +48,6 @@ class Series extends Component {
         }
         return (
             <div className='Series_container'>
-
                 <div className='Series_searchbar'>
                     <input placeholder='Search series here' onChange={this.inputhandler} />
                 </div>

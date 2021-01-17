@@ -1,6 +1,4 @@
 import { BrowserRouter, Route } from "react-router-dom"
-import Donaldregister from "./donald/Donaldregister"
-import Donaldsignin from "./donald/Donaldsignin"
 import Addjson from "./Addmovies"
 import Mainpage from "./Intropage/Mainpage"
 import Register from "./logincomponents/Register"
@@ -12,14 +10,16 @@ import Series from "./Netflixprofile.js/Series"
 import Watchlist from "./Netflixprofile.js/Watchlist"
 import Practice from "./Practice"
 import Userprofile from "./users/Userprofile"
-import Whoswatching from "./Whoiswatching/Whoswatching"
+import Watching_card from "./Whoiswatching/Watching_card"
+
+
 const Mainrouter = () => {
     return (
         <div>
             <BrowserRouter>
                 <Route path='/' exact component={Mainpage} />
                 <Route path='/signin' exact component={Signin} />
-                <Route path='/watching' component={Whoswatching} />
+                <Route path='/watching' component={Watching_card} />
                 <Route path='/profile' component={Mainprofile} />
                 <Route path='/db' component={Addjson} />
                 <Route path='/series' component={Series} />
@@ -29,7 +29,6 @@ const Mainrouter = () => {
                 <Route path='/practice' component={Practice} />
                 <Route path='/watchlist' component={Watchlist} />
                 <Route path='/userprofile' component={Userprofile} />
-
             </BrowserRouter>
         </div>
     )

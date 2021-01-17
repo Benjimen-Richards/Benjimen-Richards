@@ -5,8 +5,8 @@
     flex-wrap: wrap;
     align-items: center;
     color: white;
-    padding:50px;
-    margin-bottom: 5px;
+    padding: 70px 45px;
+    border-bottom: 8px solid #222;
     /* border: 1px solid blue; */
     min-height: 50vh;
     justify-content: space-around;
@@ -42,6 +42,7 @@
   position: relative;
   top: 0;
   left: 0;
+  
 }
 
 .img1 {
@@ -56,5 +57,6 @@
     border-radius: 5px;
     top: 60px;
     left: 53px;
+    
     border: 1px solid #000000;
   }

@@ -5,9 +5,29 @@
     height: 20vh;
     margin: 50px;
     transition:all .2s ease-in-out;
- 
+}
+.whoswatching_container
+{
+    /* border: 10px solid green; */
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.whoswatching_container button
+{
+    width: 10%;
+    height: 20vh;
+    margin-top: 3%;
+    border-radius: 10px;
+    transition:all .2s ease-in-out;
+    background-color: rgb(94, 87, 87);
 }
 .Card_container:hover
+{
+    transform: scale(1.2) ;
+}
+.whoswatching_container button:hover
 {
     transform: scale(1.2) ;
 }
@@ -30,4 +50,37 @@
 {
     width: 12% ;
     height: 22vh;
+}
+.user_profile
+{
+    /* border:1px solid white; */
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.user_profile input 
+{
+    width: 20%;
+    height: 5vh;
+    margin: 10px;
+    background-color:whitesmoke;
+    /* outline: none; */
+    border-radius: 20px;
+    outline: none;
+}
+.user_profile button 
+{
+    width: 10%;
+    height: 5vh;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+}
+.error
+{
+     /* border:1px solid white; */
+     text-align: center;
 }

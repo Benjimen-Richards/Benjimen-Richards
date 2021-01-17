@@ -21,6 +21,9 @@ class Profilebody extends Component {
             )
         }
     }
+
+
+
     selecthandler = (e) => {
         const id = e.target.id
         if (this.state.movies) {
@@ -31,9 +34,9 @@ class Profilebody extends Component {
             sessionStorage.setItem('movie_name', cartimage[0].name)
             sessionStorage.setItem('movie_image', cartimage[0].imageurl)
             sessionStorage.setItem('movie_id', cartimage[0].id)
-            console.log(cartimage[0])
+            // console.log(cartimage[0])
             window.scrollTo({ top: 0 })
-            axios.post(carturl, cartimage)
+            // axios.post(carturl, cartimage)
             this.props.history.push('/profile')
 
         }
