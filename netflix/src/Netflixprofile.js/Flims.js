@@ -1,5 +1,7 @@
 import axios from "axios";
 import { Component } from "react";
+import { BsSkipBackward } from 'react-icons/bs'
+import { Link } from "react-router-dom";
 import './Css/Series.css'
 const url = 'http://localhost:1234/movies'
 class Flims extends Component {
@@ -31,17 +33,23 @@ class Flims extends Component {
         }
 
     }
+    redirecttoprofile = () => {
+        // this.props.history.push('/profile')
+        console.log('clicked')
+    }
     render() {
         if (sessionStorage.getItem('logintoken') === null) {
             this.props.history.push('/signin')
         }
         return (
-            <div className='Series_container'>
-                <div className='Series_searchbar'>
-                    <input placeholder='Search Flims here' onChange={this.inputhandler} />
-                </div>
-                <div className='Seriessearch_results'>
-                    {this.rendermovie(this.state.filteredseries)}
+            <div>
+                <div className='Series_container'>
+                    <div className='Series_searchbar'>
+                        <input placeholder='Search Flims here' onChange={this.inputhandler} />
+                    </div>
+                    <div className='Seriessearch_results'>
+                        {this.rendermovie(this.state.filteredseries)}
+                    </div>
                 </div>
             </div>
         )
@@ -55,7 +63,11 @@ class Flims extends Component {
                 this.setState({ series: output })
             }
         })
-
+        window.scrollTo(
+            {
+                top: 0
+            }
+        )
     }
 }
 export default Flims

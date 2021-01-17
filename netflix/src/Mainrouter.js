@@ -3,6 +3,7 @@ import Addjson from "./Addmovies"
 import Mainpage from "./Intropage/Mainpage"
 import Register from "./logincomponents/Register"
 import Signin from "./logincomponents/Signin"
+import Moviepage from "./moviepage/Moviepage"
 import Documantaries from "./Netflixprofile.js/Documatary"
 import Flims from "./Netflixprofile.js/Flims"
 import Mainprofile from "./Netflixprofile.js/Mainprofile"
@@ -29,6 +30,7 @@ const Mainrouter = () => {
                 <Route path='/practice' component={Practice} />
                 <Route path='/watchlist' component={Watchlist} />
                 <Route path='/userprofile' component={Userprofile} />
+                <Route path='/moviepage' component={Moviepage} />
             </BrowserRouter>
         </div>
     )

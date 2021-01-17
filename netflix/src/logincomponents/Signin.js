@@ -122,5 +122,8 @@ class Signin extends Component {
             </div>
         )
     }
+    componentDidMount() {
+        window.scrollTo({ top: 0 })
+    }
 }
 export default Signin

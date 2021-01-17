@@ -9,10 +9,10 @@ const Watchlist = () => {
     const [update, setupdate] = useState('')
     useEffect(async () => {
         await axios.get(carturl).then(res => setwatchlist(res.data))
+        window.scrollTo(0, 0);
     }, [update])
     const deletehandler = (e) => {
         axios.delete(`${carturl}/${e.target.value}`).then(res => setupdate(res.data))
-
     }
     const renderwatchlist = (data) => {
         if (data) {
@@ -44,6 +44,5 @@ const Watchlist = () => {
             </div>
         </div >
     )
-
 }
 export default Watchlist

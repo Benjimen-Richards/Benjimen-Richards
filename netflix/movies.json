@@ -361,7 +361,40 @@
       "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU5f3CmPEgP01fTzAqjdfR5e-t62AhORFEnv2YmjUshgkWTmFRjNAtpRPjjCG83nt9MVnB71JEoeBnrIn5nynL06CfC8BQXZJnJoyZy_VJEY4Ok2BeM2M7fGK3h_.jpg?r=fa1"
     }
   ],
-  "cart": [],
+  "cart": [
+    [
+      {
+        "id": "4",
+        "name": "Santa Clarita Diet",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/73/61/d3/7361d3497d657b3cae93eb3b41d2d7ed.jpg"
+      }
+    ],
+    [
+      {
+        "id": "6",
+        "name": "A Series of unfortunatee Evenets",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/2d/f0/51/2df05181879bdfa7c843836a64e28bbb.jpg"
+      }
+    ],
+    [
+      {
+        "id": "17",
+        "name": "Breaking Bad",
+        "genere": "Series",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeAuDKIU6ojBLB_b3eTdFBIUmNJ57Sr7xXk4z8I7GyygIrXQyknSm8gI_dhh5Fsp2lnm8DY9ZOEOIA-C1ReeZ5254Ow.jpg?r=01d"
+      }
+    ],
+    [
+      {
+        "id": "3",
+        "name": "Glitch",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/51/93/99/51939967ed93995d55340608884e0e32.jpg"
+      }
+    ]
+  ],
   "watching": [
     {
       "image": "https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png",

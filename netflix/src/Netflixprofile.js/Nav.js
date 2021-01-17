@@ -1,7 +1,9 @@
 import { Link, withRouter } from 'react-router-dom'
 import { Component } from "react"
+import { MdCancel } from 'react-icons/md'
 import './Css/Profile.css'
 import axios from 'axios'
+import { FiSearch } from 'react-icons/fi'
 const url = 'http://localhost:1234/movies'
 const carturl = 'http://localhost:1234/cart'
 class Profilenav extends Component {
@@ -13,7 +15,11 @@ class Profilenav extends Component {
             visible: '',
             movies: '',
             selectvisible: '',
-            listdata: ''
+            listdata: '',
+            searchbarVisible: '',
+            cancel: 'true',
+            inputvalue: '',
+            listvisible: 'true'
         }
     }
     logouthandler = () => {
@@ -37,6 +43,8 @@ class Profilenav extends Component {
     changehandler = (e) => {
         const keyword = e.target.value
         // console.log(keyword)
+        this.setState({ [e.target.name]: e.target.value })
+        console.log(this.state.inputvalue)
         if (this.state.movies) {
             const filterlisting = this.state.movies.filter(item =>
             (
@@ -71,7 +79,7 @@ class Profilenav extends Component {
         sessionStorage.setItem('movie_name', cartimage[0].name)
         sessionStorage.setItem('movie_image', cartimage[0].imageurl)
         sessionStorage.setItem('movie_id', cartimage[0].id)
-        this.props.history.push('/profile')
+        this.props.history.push('/moviepage')
         console.log(cartimage)
     }
     renderlist = (data) => {
@@ -85,6 +93,12 @@ class Profilenav extends Component {
             )
             // console.log(data)
         }
+    }
+    setsearchvisible = () => {
+        this.setState({ searchbarVisible: 'visible', cancel: !this.state.cancel })
+    }
+    cancel = () => {
+        this.setState({ searchbarVisible: '', cancel: !this.state.cancel, inputvalue: '', listdata: '' })
     }
     render() {
         // console.log(this.state.movies)
@@ -123,11 +137,19 @@ class Profilenav extends Component {
                     </div>
                     <div className='nav_right'>
                         <div className='nav_search'>
-                            <input placeholder='search data here' onClick={this.inputvisiblehandler} onChange={this.changehandler} />
                             {
-                                this.state.selectvisible && <div className='navsearch_list'>
+                                this.state.searchbarVisible && <input placeholder='search data here' onClick={this.inputvisiblehandler} name='inputvalue' value={this.state.inputvalue} onChange={this.changehandler} autocomplete="off" />
+                            }
+                            {
+                                this.state.listvisible && <div className='navsearch_list'>
                                     {this.renderlist(this.state.listdata)}
                                 </div>
+                            }
+                            {
+                                this.state.cancel && <FiSearch onClick={this.setsearchvisible} />
+                            }
+                            {
+                                !this.state.cancel && <MdCancel onClick={this.cancel} />
                             }
                         </div>
                         <div className='navimage_container'>

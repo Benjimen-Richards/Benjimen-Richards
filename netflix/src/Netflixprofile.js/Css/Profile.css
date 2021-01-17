@@ -41,7 +41,9 @@
     width: 70%;
     border-radius: 25px;
     padding: 5px;
-    /* background-color: rgb(165, 148, 148); */
+    outline: none;
+    border: none;
+    background-color: rgba(211, 207, 207, 0.3);
 }
 .nav_right input:focus
 {
@@ -61,10 +63,12 @@
     list-style: none;
     padding-left: 20px;
     border-radius: 10px;
-    background-color: honeydew;
+    background-color: rgba(0,0,0,.75);
     min-width: 200px;
     flex-wrap: wrap;
-    color: black;
+    max-height: 500px;
+    overflow: hidden;
+    /* color: black; */
 }
 .nav_select
 {

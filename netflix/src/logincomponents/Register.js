@@ -84,6 +84,9 @@ class Register extends Component {
         if (sessionStorage.getItem('register_email')) {
             this.setState({ email: sessionStorage.getItem('register_email') })
         }
+
+        window.scrollTo({ top: 0 })
+
     }
 }
 export default Register

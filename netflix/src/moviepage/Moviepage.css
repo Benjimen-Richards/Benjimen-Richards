@@ -1,0 +1,37 @@
+.moviepage_container
+{
+    position: relative;
+}
+.movie_image img
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.3;
+    z-index: -2;
+}
+.movie_name
+{
+    position: absolute;
+    /* border: 1px solid white; */
+    width: 50%;
+    height: 50vh;
+    margin-top: 200px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(24, 23, 23, 0.75); */
+
+
+}
+.movie_name button
+{
+    width: 30%;
+    margin-left: 50px;
+}
+.movie_name h1
+{
+    font-size: 50px;
+    font-weight: 700;
+}

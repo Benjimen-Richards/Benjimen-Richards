@@ -25,7 +25,7 @@ class Watchingcard extends Component {
         if (data) {
             return data.map((item, idx) =>
             (
-                <Link to='/profile' style={{ textDecoration: 'none' }} name={item.name} value={item.image} onClick={this.setsession} >
+                <Link to='/profile' style={{ textDecoration: 'none' }} name={item.name} value={item.image} onClick={this.Setprofile} >
                     <div className='Card_container'  >
                         <div className='card_img'>
                             <img src={item.image} alt='/' />

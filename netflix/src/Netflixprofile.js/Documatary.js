@@ -56,6 +56,11 @@ class Documantaries extends Component {
                 this.setState({ series: output })
             }
         })
+        window.scrollTo(
+            {
+                top: 0
+            }
+        )
     }
 }
 export default Documantaries
