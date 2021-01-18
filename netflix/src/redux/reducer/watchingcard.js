@@ -1,4 +1,4 @@
-const moviesreducer = (state = {}, action) => {
+const watching = (state = {}, action) => {
     switch (action.type) {
         case 'types':
             return { ...state, data: action.payload }
@@ -7,4 +7,4 @@ const moviesreducer = (state = {}, action) => {
             return state
     }
 }
-export default moviesreducer
+export default watching

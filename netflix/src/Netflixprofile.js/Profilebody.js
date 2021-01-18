@@ -34,6 +34,7 @@ class Profilebody extends Component {
             sessionStorage.setItem('movie_name', cartimage[0].name)
             sessionStorage.setItem('movie_image', cartimage[0].imageurl)
             sessionStorage.setItem('movie_id', cartimage[0].id)
+            sessionStorage.setItem('listbutton', true)
             // console.log(cartimage[0])
             window.scrollTo({ top: 0 })
             // axios.post(carturl, cartimage)

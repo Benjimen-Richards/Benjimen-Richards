@@ -361,7 +361,32 @@
       "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU5f3CmPEgP01fTzAqjdfR5e-t62AhORFEnv2YmjUshgkWTmFRjNAtpRPjjCG83nt9MVnB71JEoeBnrIn5nynL06CfC8BQXZJnJoyZy_VJEY4Ok2BeM2M7fGK3h_.jpg?r=fa1"
     }
   ],
-  "cart": [],
+  "cart": [
+    [
+      {
+        "id": "4",
+        "name": "Santa Clarita Diet",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/73/61/d3/7361d3497d657b3cae93eb3b41d2d7ed.jpg"
+      }
+    ],
+    [
+      {
+        "id": "23",
+        "name": "Aquaman",
+        "genere": "Movies",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa1nyBEi4gqCXXYJXObKWDwHT3HARnPQTPIi1G0IoXNApiXdldb6HG-M6sAaT4iSEE9L-SljqzTf0jlJl6WRfLvCRYA.jpg?r=845"
+      }
+    ],
+    [
+      {
+        "id": "56",
+        "name": "Roman Empire",
+        "genere": "Documentaries",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXT_JSsNU1xz23H-NHMAuO1C0xSkx6NYmtRGYiQXNtTeEvc-v-BpZIaYF_HldS6ZKaecrRK-SXEgnx93x8hPI1A2jCGiNNn8qA2K63n38X6XUemX_e-cHZxWcPnn.jpg?r=7b2"
+      }
+    ]
+  ],
   "watching": [
     {
       "image": "https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png",
@@ -370,17 +395,17 @@
     },
     {
       "image": "https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png",
-      "name": "dadf",
+      "name": "b",
       "id": 2
     },
     {
       "image": "https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png",
-      "name": "adf",
+      "name": "d",
       "id": 3
     },
     {
       "image": "https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png",
-      "name": "adf",
+      "name": "c",
       "id": 4
     }
   ]

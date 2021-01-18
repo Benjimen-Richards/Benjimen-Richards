@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import cardreducer from './cardreducer'
-import moviesreducer from './moviesreducer'
-const reducer = combineReducers({ cardreducer, moviesreducer })
+import watchlist_reducer from './watchlist_reducer'
+import moviesreducer from './watchingcard'
+const reducer = combineReducers({ watchlist_reducer, moviesreducer })
 export default reducer

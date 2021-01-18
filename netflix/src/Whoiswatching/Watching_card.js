@@ -21,14 +21,17 @@ class Watching_card extends Component {
     Setprofile = (e) => {
         sessionStorage.setItem('profile_name', e.target.name)
         sessionStorage.setItem('profile_image', e.target.value)
+        sessionStorage.setItem('movie_image', "https://i.pinimg.com/236x/ef/87/07/ef8707c0d1a39404c07450de32a8b83d.jpg")
+        sessionStorage.setItem('movie_id', "1")
         console.log(e.target.value, e.target.name, 'clicked')
+        this.props.history.push('/profile')
     }
     renderwatching = (data) => {
         if (data) {
             // console.log(data)
             return data.map((item, idx) =>
             (
-                <Link to='/profile' style={{ textDecoration: 'none' }} value={item.img} name={item.name} onClick={this.Setprofile} >
+                <div style={{ textDecoration: 'none' }} key={idx} value={item.id} name={item.name} onClick={this.Setprofile} >
                     <div className='Card_container'  >
                         <div className='card_img'>
                             <img src={item.image} alt='/' />
@@ -37,7 +40,7 @@ class Watching_card extends Component {
                             <h4>{item.name}</h4>
                         </div>
                     </div>
-                </Link>
+                </div>
 
             ))
         }
@@ -55,7 +58,6 @@ class Watching_card extends Component {
         }
         this.setState({ username: '' })
         this.setState({ visible: '' })
-        // console.log(userdata)
         if (this.props.watching.length < 4) {
             axios.post(watchingurl, userdata)
             this.props.history.push('/watching')
@@ -106,6 +108,7 @@ class Watching_card extends Component {
 
 }
 const mapstatetoprops = (state) => {
+    // console.log('state', state)
     return {
         watching: state.moviesreducer.data
     }

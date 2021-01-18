@@ -19,7 +19,7 @@ class Profilenav extends Component {
             searchbarVisible: '',
             cancel: 'true',
             inputvalue: '',
-            listvisible: 'true'
+            listvisible: 'true',
         }
     }
     logouthandler = () => {
@@ -31,7 +31,6 @@ class Profilenav extends Component {
         sessionStorage.removeItem('logintoken')
         sessionStorage.removeItem('logintoken')
         sessionStorage.removeItem('dob')
-
         this.props.history.push('/signin')
     }
 
@@ -68,7 +67,7 @@ class Profilenav extends Component {
         (
             parseInt(item.id) === parseInt(value)
         ))
-        console.log(cartimage)
+        // console.log(cartimage)
         axios.post(carturl, cartimage)
 
     }
@@ -113,7 +112,7 @@ class Profilenav extends Component {
                     </div>
                     <div className='backgroundimg_text'>
                         <h1>{sessionStorage.getItem('movie_name')}</h1>
-                        <button id={sessionStorage.getItem('movie_id')} onClick={this.idhandler} className=''>Add to watchlist</button>
+                        {sessionStorage.getItem('movie_name') && <button id={sessionStorage.getItem('movie_id')} onClick={this.idhandler} className=''>Add to watchlist</button>}
                     </div>
                 </div>
                 <div className='Profile_nav' >
@@ -133,7 +132,7 @@ class Profilenav extends Component {
                         </Link>
                         <Link to='/documantaries' style={{ textDecoration: 'none' }}>
                             <div className='nav_select'>
-                                <h3>documantaries</h3>
+                                <h3>Documantaries</h3>
                             </div>
                         </Link>
                     </div>
@@ -171,12 +170,14 @@ class Profilenav extends Component {
         )
     }
     componentDidMount() {
-        sessionStorage.setItem('movie_image', 'https://www.thenewsminute.com/sites/default/files/styles/slideshow_image_size/public/Cuties_Netflix_1200.jpg?itok=GZSv5CHx')
+
         this.setState({
             name: sessionStorage.getItem('profile_name'),
-            image: sessionStorage.getItem('profile_image')
+            image: sessionStorage.getItem('profile_image'),
+
         })
         axios.get(url).then(res => { this.setState({ movies: res.data }) })
+
     }
 
 }

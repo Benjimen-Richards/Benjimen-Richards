@@ -23,10 +23,22 @@ class Documantaries extends Component {
         }
         console.log('documatary', this.state.filteredmovie)
     }
+    dataselect = (e) => {
+        const id = e.target.id
+        const cartimage = this.state.movies.filter(item =>
+        (
+            parseInt(item.id) === parseInt(id)
+        ))
+        sessionStorage.setItem('movie_name', cartimage[0].name)
+        sessionStorage.setItem('movie_image', cartimage[0].imageurl)
+        sessionStorage.setItem('movie_id', cartimage[0].id)
+        this.props.history.push('/moviepage')
+        // console.log(cartimage)
+    }
     rendermovie = (data) => {
         if (data) {
             return (
-                data.map(item => (< img src={item.imageurl} alt='netflix images' />)
+                data.map(item => (< img src={item.imageurl} id={item.id} onClick={this.dataselect} alt='netflix images' />)
                 )
             )
         }
@@ -53,7 +65,7 @@ class Documantaries extends Component {
             if (this.state.movies) {
                 const output = this.state.movies.filter(item => item.genere === 'Documentaries')
                 console.log('output', output)
-                this.setState({ series: output })
+                this.setState({ series: output, filteredseries: output })
             }
         })
         window.scrollTo(
