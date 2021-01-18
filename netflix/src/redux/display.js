@@ -4,14 +4,13 @@ import { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import '../Whoiswatching/Watchingcard.css'
-import { watching } from '../redux/actions'
-
+import { watching } from './actions'
 const watchingurl = 'http://localhost:1234/watching'
-class Watching_card extends Component {
+class Display extends Component {
     constructor() {
         super()
         this.state = {
-
+            images: '',
             visible: '',
             username: '',
             error: ''
@@ -56,10 +55,11 @@ class Watching_card extends Component {
         this.setState({ username: '' })
         this.setState({ visible: '' })
         // console.log(userdata)
-        if (this.props.watching.length < 4) {
+        if (this.state.images.length < 4) {
             axios.post(watchingurl, userdata)
             this.props.history.push('/watching')
-            this.props.dispatch(watching())
+            axios.get(watchingurl).then(res => this.setState({ images: res.data }))
+            // console.log(this.props)
         }
         else {
             this.setState({ error: 'users exceeded' })
@@ -67,11 +67,12 @@ class Watching_card extends Component {
 
     }
     render() {
-        console.log(this.state.images)
-        if (sessionStorage.getItem('logintoken') === null) {
-            this.props.history.push('/signin')
-        }
-        // console.log('state', this.props.watching)
+        // console.log(this.state.images)
+        // if (sessionStorage.getItem('logintoken') === null) {
+        //     this.props.history.push('/signin')
+        // }
+        console.log('state', this.props.watching)
+
         return (
             <div>
                 <h1 style={{
@@ -103,7 +104,6 @@ class Watching_card extends Component {
     componentDidMount() {
         this.props.dispatch(watching())
     }
-
 }
 const mapstatetoprops = (state) => {
     return {
@@ -112,4 +112,4 @@ const mapstatetoprops = (state) => {
 
 }
 
-export default connect(mapstatetoprops)(Watching_card) 
+export default connect(mapstatetoprops)(Display) 

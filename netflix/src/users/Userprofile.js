@@ -24,7 +24,7 @@ class Userprofile extends Component {
                         <label>Name</label>
                         <input placeholder={sessionStorage.getItem('profile_name')} />
                         <label>Dob</label>
-                        <input placeholder='' />
+                        <input placeholder={sessionStorage.getItem('dob')} />
                     </div>
                 </div>
             </div>

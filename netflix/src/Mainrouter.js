@@ -10,6 +10,7 @@ import Mainprofile from "./Netflixprofile.js/Mainprofile"
 import Series from "./Netflixprofile.js/Series"
 import Watchlist from "./Netflixprofile.js/Watchlist"
 import Practice from "./Practice"
+import Display from "./redux/display"
 import Userprofile from "./users/Userprofile"
 import Watching_card from "./Whoiswatching/Watching_card"
 
@@ -31,6 +32,7 @@ const Mainrouter = () => {
                 <Route path='/watchlist' component={Watchlist} />
                 <Route path='/userprofile' component={Userprofile} />
                 <Route path='/moviepage' component={Moviepage} />
+                <Route path='/redux' component={Display} />
             </BrowserRouter>
         </div>
     )

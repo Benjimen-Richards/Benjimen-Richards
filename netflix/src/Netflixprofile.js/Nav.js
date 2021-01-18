@@ -30,6 +30,8 @@ class Profilenav extends Component {
         sessionStorage.removeItem('profile_image')
         sessionStorage.removeItem('logintoken')
         sessionStorage.removeItem('logintoken')
+        sessionStorage.removeItem('dob')
+
         this.props.history.push('/signin')
     }
 
@@ -169,6 +171,7 @@ class Profilenav extends Component {
         )
     }
     componentDidMount() {
+        sessionStorage.setItem('movie_image', 'https://www.thenewsminute.com/sites/default/files/styles/slideshow_image_size/public/Cuties_Netflix_1200.jpg?itok=GZSv5CHx')
         this.setState({
             name: sessionStorage.getItem('profile_name'),
             image: sessionStorage.getItem('profile_image')

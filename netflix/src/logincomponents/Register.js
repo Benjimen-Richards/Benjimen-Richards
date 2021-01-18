@@ -22,8 +22,9 @@ class Register extends Component {
     }
 
     submithandler = () => {
-        console.log(this.state)
+        console.log(sessionStorage.setItem('dob', this.state.dob))
         axios.post(registerurl, this.state)
+        sessionStorage.setItem('dob', this.state.dob)
         this.setState(
             {
                 name: '',
@@ -36,6 +37,7 @@ class Register extends Component {
 
             }
         )
+
         this.props.history.push('/signin')
     }
     render() {
@@ -84,7 +86,6 @@ class Register extends Component {
         if (sessionStorage.getItem('register_email')) {
             this.setState({ email: sessionStorage.getItem('register_email') })
         }
-
         window.scrollTo({ top: 0 })
 
     }

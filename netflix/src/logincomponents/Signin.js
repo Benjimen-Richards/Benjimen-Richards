@@ -18,7 +18,7 @@ class Signin extends Component {
         this.setState({ [e.target.name]: e.target.value })
     }
     submithandler = () => {
-        console.log(this.state)
+        // console.log(this.state)
         fetch(burl, {
             method: 'post',
             headers: {
@@ -67,7 +67,7 @@ class Signin extends Component {
                         </div>
                         <div class="form-group">
                             <label for="email">Email address:</label>
-                            <input type="email" name='email' value={this.state.email}
+                            <input type="text" name='email' value={this.state.email}
                                 onChange={this.changehandler} class="form-control" id="email" />
                         </div>
                         <div class="form-group">
