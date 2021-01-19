@@ -18,12 +18,12 @@ class Watching_card extends Component {
         }
     }
 
-    Setprofile = (e) => {
-        sessionStorage.setItem('profile_name', e.target.name)
-        sessionStorage.setItem('profile_image', e.target.value)
+    Setprofile = (data) => {
+        sessionStorage.setItem('profile_name', data.name)
+        sessionStorage.setItem('profile_image', data.image)
         sessionStorage.setItem('movie_image', "https://i.pinimg.com/236x/ef/87/07/ef8707c0d1a39404c07450de32a8b83d.jpg")
-        sessionStorage.setItem('movie_id', "1")
-        console.log(e.target.value, e.target.name, 'clicked')
+        sessionStorage.setItem('movie_id', data.id)
+        console.log(data, 'clicked')
         this.props.history.push('/profile')
     }
     renderwatching = (data) => {
@@ -31,7 +31,7 @@ class Watching_card extends Component {
             // console.log(data)
             return data.map((item, idx) =>
             (
-                <div style={{ textDecoration: 'none' }} key={idx} value={item.id} name={item.name} onClick={this.Setprofile} >
+                <div style={{ textDecoration: 'none' }} key={idx} value={item.id} name={item.name} onClick={() => this.Setprofile(item)} >
                     <div className='Card_container'  >
                         <div className='card_img'>
                             <img src={item.image} alt='/' />
@@ -60,13 +60,13 @@ class Watching_card extends Component {
         this.setState({ visible: '' })
         if (this.props.watching.length < 4) {
             axios.post(watchingurl, userdata)
-            this.props.history.push('/watching')
-            this.props.dispatch(watching())
         }
         else {
             this.setState({ error: 'users exceeded' })
         }
 
+        this.props.dispatch(watching())
+        this.props.history.push('/watching')
     }
     render() {
         console.log(this.state.images)
