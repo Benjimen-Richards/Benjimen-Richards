@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/post">Home</a></li>
+                <%if(userdata.role=="Admin"){%>
+                    <li><a href="/admin/allusers">
+                            <%=userdata.role%>
+                        </a></li>
+                    <li><a href="/admin/adduser">
+                            Add user
+                        </a></li>
+
+                    <%}%>
+                        <li><a href="/post/addpost">Add post</a></li>
+                        <li><a href="/login/logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Isactive</th>
+            <th>Password</th>
+            <th>Operations</th>
+        </tr>
+        <%for(i=0;i<data.length;i++){%>
+            <tr>
+
+                <td>
+                    <%=data[i]._id%>
+                </td>
+                <td>
+                    <%=data[i].name%>
+                </td>
+                <td>
+                    <%=data[i].email%>
+                </td>
+                <td>
+                    <%=data[i].isActive%>
+
+                </td>
+                <td>
+                    <%=data[i].role%>
+
+                </td>
+                <td>
+                    <%=data[i].password%>
+                </td>
+                <td>
+                    <a href="/admin/getuserdetails/<%=data[i]._id%>"><button>Edit</button></a>
+                    <a href="/admin/deleteuser/<%=data[i]._id%>"><button>Delete</button></a>
+                </td>
+                </td>
+
+            </tr>
+            <%}%>
+    </table>
+
+</body>
+
+</html>
