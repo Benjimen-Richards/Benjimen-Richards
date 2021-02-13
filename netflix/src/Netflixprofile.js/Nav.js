@@ -117,25 +117,26 @@ class Profilenav extends Component {
                 </div>
                 <div className='Profile_nav' >
                     <div className='nav_left'>
-                        <img style={{
-                            width: '300px', height: '200px'
-                        }} src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img>
-                        <Link to='/series' style={{ textDecoration: 'none' }}>
-                            <div className='nav_select'>
-                                <h3>Series</h3>
-                            </div>
-                        </Link>
-                        <Link to='/flims' style={{ textDecoration: 'none' }}>
-                            <div className='nav_select'>
-                                <h3>Flims</h3>
-                            </div>
-                        </Link>
-                        <Link to='/documantaries' style={{ textDecoration: 'none' }}>
-                            <div className='nav_select'>
-                                <h3>Documantaries</h3>
-                            </div>
-                        </Link>
+                        <img src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img>
+                        <div className="nav_left_text">
+                            <Link to='/series' style={{ textDecoration: 'none' }}>
+                                <div className='nav_select'>
+                                    <h3>Series</h3>
+                                </div>
+                            </Link>
+                            <Link to='/flims' style={{ textDecoration: 'none' }}>
+                                <div className='nav_select'>
+                                    <h3>Flims</h3>
+                                </div>
+                            </Link>
+                            <Link to='/documantaries' style={{ textDecoration: 'none' }}>
+                                <div className='nav_select'>
+                                    <h3>Documantaries</h3>
+                                </div>
+                            </Link>
+                        </div>
                     </div>
+
                     <div className='nav_right'>
                         <div className='nav_search'>
                             {

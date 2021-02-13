@@ -54,9 +54,7 @@ class Signin extends Component {
                     <img src='https://assets.nflxext.com/ffe/siteui/vlv3/9a818ce7-5b19-4a0a-8bec-e4a233c8661b/8a09c2e9-b912-4286-8836-706712bdad61/IN-en-20210104-popsignuptwoweeks-perspective_alpha_website_small.jpg' alt='/' />
                 </div>
                 <div className='signinlogo'>
-                    <Link to='/'><img style={{
-                        width: '200px', height: '250px'
-                    }} src='https://cdn.iconscout.com/icon/free/png-256/netflix-282224.png' alt='/'></img></Link>
+                    <Link to='/'><img src='https://cdn.iconscout.com/icon/free/png-256/netflix-282224.png' alt='/'></img></Link>
                 </div>
 
                 <div className='form2'>

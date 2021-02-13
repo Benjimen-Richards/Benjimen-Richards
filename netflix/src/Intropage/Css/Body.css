@@ -60,3 +60,29 @@
     
     border: 1px solid #000000;
   }
+
+
+  @media all and (max-width:400px)
+  {
+    .texth1
+    {
+      /* display: none; */
+      font-size: 1rem;
+    }
+    .texth3
+    {
+      font-size: 5px;
+    
+      word-wrap: break-word;
+      /* display: flex;
+      justify-content: center; */
+      text-align: center;
+
+    }
+    .img1 
+    {
+        /* display: none; */
+      width: 100%;
+    }
+   
+  }

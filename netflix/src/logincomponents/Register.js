@@ -47,11 +47,9 @@ class Register extends Component {
                     <img src='https://assets.nflxext.com/ffe/siteui/vlv3/9a818ce7-5b19-4a0a-8bec-e4a233c8661b/8a09c2e9-b912-4286-8836-706712bdad61/IN-en-20210104-popsignuptwoweeks-perspective_alpha_website_small.jpg' alt='/' />
                 </div>
                 <div className='signinlogo'>
-                    <Link to='/'><img style={{
-                        width: '300px', height: '200px'
-                    }} src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
+                    <Link to='/'><img src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
                 </div>
-                <div className='form1'></div>
+                {/* <div className='form1'></div> */}
                 <div className='form2'>
                     <form action="/action_page.php">
                         <div>

@@ -57,3 +57,39 @@
     left: 250px;
    
   }
+
+  @media only screen and (max-width:500px)
+  {
+    .Dncontainer
+    {
+      /* display: none; */
+      width: 100%;
+
+    }
+    .dnimg1
+    {
+      width: 100%;
+      position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #000000;
+    }
+    .dnimg2
+    {
+      position: absolute;
+      border-radius: 5px;
+      top: 70%;
+      left: 22%;
+    }
+    .dnh1
+    {
+      /* display: none; */
+      font-size:small;
+      text-align: center;
+    }
+    .d1h3
+    {
+      font-size: 1rem;
+      text-align: center;
+    }
+  } 

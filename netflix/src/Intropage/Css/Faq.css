@@ -83,3 +83,33 @@
     text-align: center;
     /* flex-wrap: wrap; */
 }
+
+@media all and (max-width:500px)
+{
+    .Faqoptions
+    {
+        /* display: none; */
+        width: 100%;
+    }
+    .Faq_text
+    {
+      /* display: none; */
+      text-align: center;
+    }
+    .faqready
+    {
+      width: 100%;
+      font-size: large;
+    }
+    .Faqcontainer
+    {
+      height: max-content;
+    }
+    .faqbodysearch
+    {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-left: 0;
+    }
+}

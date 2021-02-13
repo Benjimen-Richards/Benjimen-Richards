@@ -34,8 +34,44 @@
 }
 .Seriessearch_results img
 {
+    
     width: 25%;
     height: 40vh;
     margin: 30px;
     box-shadow: 0 4px 8px 0 rgba(136, 121, 121, 0.2), 0 6px 20px 0 rgba(201, 183, 183, 0.19);
 }
+
+@media all and (max-width:500px)
+{
+    .Series_container
+    {
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+    }
+    .Series_searchbar
+    {
+        width: max-content;
+        height: max-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .Seriessearch_results
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .Seriessearch_results img
+{
+    
+    width: 80%;
+    height: 40vh;
+    margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(136, 121, 121, 0.2), 0 6px 20px 0 rgba(201, 183, 183, 0.19);
+}
+}
+
+

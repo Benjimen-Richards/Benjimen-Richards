@@ -3,18 +3,24 @@
 {
     position: relative;
     box-sizing: border-box;
-    min-height: 100vh;
+    
 }
 .signinbackgrd img
 {
     width: 100%;
-    min-height: 160vh;
+    height: 180vh;
     opacity: 0.5;
+}
+.signinlogo img
+{
+    width:200px;
+    height: 200px;
+    /* display: none; */
 }
 .signinlogo
 {
     position: absolute;
-    top: 0;
+    top: -50px;
     margin-left: 5%;
 }
 .form2
@@ -22,18 +28,17 @@
     background-color: rgba(0,0,0,.75);
     box-sizing: border-box;
     position: absolute;
-    top: 150px;
+    top: 70px;
     left: 35%;
-    width: 30%;
+    width: 350px;
     display: flex;
     flex-direction: column;
     padding: 60px 68px 40px;
     margin-bottom: 90px;
-    min-height: 650px;
+    height: 550px;
     font-size: 34px; 
    border-radius: 10px;
-   overflow: hidden;
-    
+   overflow: hidden;  
 }
 
 #sigin_button
@@ -53,13 +58,12 @@
 .footer
 {
     position: absolute;
-    top:68%;
+    bottom:0px;
     background: rgba(0,0,0,.75);
     font-size: 1em;
-    height:max-content;
+    height:250px;
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
     margin-top: 80px;
 }
 .signin_text h4
@@ -68,7 +72,8 @@
 }
 .form2 input
 {
-    height: 7vh;
+   width: 100%;
+   margin-left: 0%;
 }
 .registerbutton
 {
@@ -84,4 +89,90 @@
 .selectlang select
 {
     outline: hidden;
+}
+
+@media all and (max-width:500px)
+{
+    .Footerlinks
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+    }
+    .selectlang
+    {
+        display: flex;
+        padding-left: 30px;
+
+    }
+    a{
+        /* display: none; */
+        font-size: medium;
+    }
+    .footer
+{
+    position: absolute;
+    bottom: 0px;
+    background: rgba(0,0,0,.75);
+    font-size: 1em;
+    height:fit-content;
+    width: 100%;
+    margin-top: 80px;
+}
+    .sigincontainer
+{
+    position: relative;
+    box-sizing: border-box;    
+}
+    
+    .form2
+{
+    /* display: none; */
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    height: 500px;
+    padding: 50px;
+    
+}
+.signinlogo
+{
+    position: absolute;
+    left: 80px;
+    margin-left: 5%;
+}
+    h2
+    {
+        /* display: none; */
+        font-size: xx-large;
+        word-wrap: break-word;
+    }
+    .form2 input
+    {
+        /* display: none; */
+        width: 100%;
+        height: 50%;
+    }
+    .sigincontainer
+    {
+        position: relative;
+    }
+    .signinlogo
+    {
+        /* display: none; */
+        width: 50%;
+        position: absolute;
+        top: 0%;
+    }
+   
+    h4
+    {
+        font-size: xx-small;
+        overflow:hidden;
+    }
+    .signinbackgrd img
+    {
+        height: fit-content;
+    }
+  
 }

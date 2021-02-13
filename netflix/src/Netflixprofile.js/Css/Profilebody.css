@@ -27,3 +27,12 @@
     width: 10px;
 }
 
+@media all and (max-width:500px)
+{
+    
+.series_ccontainer img
+    {
+        width: 250px;
+    }
+}
+

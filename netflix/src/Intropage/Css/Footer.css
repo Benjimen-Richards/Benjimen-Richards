@@ -14,7 +14,7 @@
 .Questions h4
 {
     color: rgb(66, 61, 61);
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 .block
 {
@@ -61,3 +61,23 @@
     color: rgb(66, 61, 61);
     margin-left: 80px;
 }
+
+@media all and (max-width:500px)
+{
+    .block
+    {
+        /* display: none; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .selectlang
+    {
+        /* display: none; */
+        display: flex;
+        margin: 0%;
+    }
+    
+}
+

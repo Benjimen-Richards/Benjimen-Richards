@@ -35,3 +35,24 @@
     font-size: 50px;
     font-weight: 700;
 }
+
+
+@media all and (max-width:500px)
+{
+        .movie_name
+        {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .movie_name h1
+        {
+            font-size: xx-large;
+        }
+        .movie_name button
+        {
+            margin-left: 0%;
+            margin-top: 10px;
+        }
+}

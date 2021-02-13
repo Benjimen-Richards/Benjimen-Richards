@@ -33,12 +33,8 @@ class Watching_card extends Component {
             (
                 <div style={{ textDecoration: 'none' }} key={idx} value={item.id} name={item.name} onClick={() => this.Setprofile(item)} >
                     <div className='Card_container'  >
-                        <div className='card_img'>
-                            <img src={item.image} alt='/' />
-                        </div>
-                        <div className='card_name'  >
-                            <h4>{item.name}</h4>
-                        </div>
+                        <img src={item.image} alt='/' />
+                        <h4><b><i>{item.name}</i></b></h4>
                     </div>
                 </div>
 

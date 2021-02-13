@@ -15,7 +15,7 @@
 {
     box-sizing: border-box;
     position: absolute;
-    top: 300px;
+    top: 200px;
     max-width: 1000px;
     max-height: 1000px;
     display: flex;
@@ -88,4 +88,35 @@
 }
 .moveup::-moz-focus-inner {
     border: 0;
+ }
+
+ @media only screen and (max-width:500px)
+ {
+    .bodywelcome h1
+    {
+        display: flex;
+        font-size: xx-large;
+    }
+    .Headercontainer
+    {
+        height: 100%;
+    }
+    .bodyready
+    {
+        word-wrap: break-word;
+    }
+    .moveup
+    {
+        display: none;
+    }
+    .Headerbodysearch
+    {
+        width: 80%;
+        margin-left: 30px;
+        height: 20px;
+    }
+    .headerbody
+    {
+        padding-top: 100px;
+    }
  }

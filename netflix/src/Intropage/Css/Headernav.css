@@ -32,3 +32,18 @@
 {
     margin-left: 32%;
 }
+
+@media all and (max-width:500px)
+{
+    .nav
+{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navimg
+{
+    width: 10px;
+}
+}

@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className='Footercontainer'>
             <div className='Questions'>
-                <h4>Questions? Call 000-800-040-4843</h4>
+                <h4 id="quest">Questions? Call 000-800-040-4843</h4>
             </div>
             <div className='Footerlinks'>
                 <div className='block'>

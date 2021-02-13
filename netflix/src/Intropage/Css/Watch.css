@@ -56,3 +56,19 @@
     border: 1px solid #000000;
     
   }
+
+  @media all and (max-width:400px)
+  {
+    .wthcontainer
+    {
+      width: 100%;
+    }
+    .watchh1 
+    {
+      text-align: center;
+    }
+    .watchh3
+    {
+      text-align: center;
+    }
+  }
