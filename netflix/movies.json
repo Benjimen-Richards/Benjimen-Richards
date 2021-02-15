@@ -362,34 +362,20 @@
     }
   ],
   "cart": [
-    {
-      "id": "60",
-      "name": "Mind Explained",
-      "genere": "Documentaries",
-      "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU5f3CmPEgP01fTzAqjdfR5e-t62AhORFEnv2YmjUshgkWTmFRjNAtpRPjjCG83nt9MVnB71JEoeBnrIn5nynL06CfC8BQXZJnJoyZy_VJEY4Ok2BeM2M7fGK3h_.jpg?r=fa1"
-    },
     [
       {
-        "id": "5",
-        "name": "The Walking Dead",
-        "genere": "Series",
-        "imageurl": "https://i.pinimg.com/236x/da/dc/6f/dadc6f126e8d104819702b2c43de128a.jpg"
+        "id": "45",
+        "name": "World War II in Colour",
+        "genere": "Documentaries",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS_1tvfIbmNvJnur-vVAn9Vp9TWHOXm12-IAQCNzuUCnScBM_GIliRon0QR9U_6o_TCYiCyB2SufGGBF4vcFQevIy8w.jpg?r=94b"
       }
     ],
     [
       {
-        "id": "4",
-        "name": "Santa Clarita Diet",
+        "id": "6",
+        "name": "A Series of unfortunatee Evenets",
         "genere": "Series",
-        "imageurl": "https://i.pinimg.com/236x/73/61/d3/7361d3497d657b3cae93eb3b41d2d7ed.jpg"
-      }
-    ],
-    [
-      {
-        "id": "17",
-        "name": "Breaking Bad",
-        "genere": "Series",
-        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeAuDKIU6ojBLB_b3eTdFBIUmNJ57Sr7xXk4z8I7GyygIrXQyknSm8gI_dhh5Fsp2lnm8DY9ZOEOIA-C1ReeZ5254Ow.jpg?r=01d"
+        "imageurl": "https://i.pinimg.com/236x/2d/f0/51/2df05181879bdfa7c843836a64e28bbb.jpg"
       }
     ]
   ],

@@ -42,19 +42,21 @@
 }
 
 .wthimg1 {
+  /* display: none; */
     position: relative;
+   
     top: 0;
     left: 0;
     border: 1px solid #000000;
   }
   
   .wthimg2 {
+    /* display: none; */
     position: absolute;
     border-radius: 5px;
     top: 30px;
     left: 73px;
-    border: 1px solid #000000;
-    
+    border: 1px solid #000000;    
   }
 
   @media all and (max-width:400px)

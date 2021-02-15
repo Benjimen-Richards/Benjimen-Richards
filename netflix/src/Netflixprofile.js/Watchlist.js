@@ -20,6 +20,7 @@ class Display extends Component {
     }
 
     renderwatchlist = (data) => {
+        console.log("watchlist", data)
         if (data) {
             return (
                 data.map((item, idx) => {
@@ -28,7 +29,8 @@ class Display extends Component {
                             <img src={item[0].imageurl} style={{
                                 maxWidth: '300px', height: '350px', border: 'none'
                             }} alt='netflix watchlist' />
-                            <button key={item[0].id} value={idx + 1} className='btn btn-success' onClick={this.deletehandler}>delete</button>
+                            <button value={idx + 1} className='btn btn-success' onClick={this.deletehandler}>delete</button>
+
                         </div>
                     )
                 })

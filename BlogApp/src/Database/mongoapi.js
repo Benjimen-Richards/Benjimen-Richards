@@ -3,7 +3,8 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const mongodb = require('mongodb')
 const mongoClient = mongodb.MongoClient
-const mongourl = "mongodb://localhost:27017"
+// const mongourl = "mongodb://localhost:27017"
+const mongourl = "mongodb+srv://benjimen:richards@cluster0.36l95.mongodb.net/<dbname>?retryWrites=true&w=majority"
 const port = process.env.PORT || 1111
 const path = require('path')
 const collection_name = 'blog'

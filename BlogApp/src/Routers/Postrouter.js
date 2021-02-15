@@ -4,7 +4,8 @@ var postrouter = express.Router()
 const collection_name = "Posts"
 const mongo = require("mongodb")
 const mongoClient = mongo.MongoClient
-const mongourl = "mongodb://localhost:27017"
+// const mongourl = "mongodb://localhost:27017"
+const mongourl = "mongodb+srv://benjimen:richards@cluster0.36l95.mongodb.net/<dbname>?retryWrites=true&w=majority"
 let database
 
 

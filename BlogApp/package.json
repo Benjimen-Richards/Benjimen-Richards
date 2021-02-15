@@ -15,7 +15,7 @@
     "mongodb": "^3.6.4"
   },
   "scripts": {
-    "dev": "nodemon src/Database/mongoapi.js"
+    "dev": "nodemon src/Database/mongoapi.js",
   },
   "eslintConfig": {
     "extends": [

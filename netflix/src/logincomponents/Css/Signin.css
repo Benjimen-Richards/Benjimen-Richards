@@ -93,6 +93,10 @@
 
 @media all and (max-width:500px)
 {
+    h1
+    {
+        font-size: x-large;
+    }
     .Footerlinks
     {
         display: flex;
@@ -124,15 +128,14 @@
     position: relative;
     box-sizing: border-box;    
 }
-    
     .form2
 {
-    /* display: none; */
     position: absolute;
-    top: 130px;
+    top: 150px;
     left: 30px;
     height: 500px;
-    padding: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
     
 }
 .signinlogo
@@ -170,9 +173,5 @@
         font-size: xx-small;
         overflow:hidden;
     }
-    .signinbackgrd img
-    {
-        height: fit-content;
-    }
-  
+    
 }
