@@ -1,0 +1,35 @@
+.listing_container
+{
+    width: 100%;
+}
+.content
+{
+    display: flex;
+}
+.sidebar
+{
+    width: 20%;
+}
+.maincontent
+{
+    width: 70%;
+}
+@media all and (max-width:750px)
+{
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .sidebar
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .maincontent
+    {
+        width: 100%;
+    }
+}

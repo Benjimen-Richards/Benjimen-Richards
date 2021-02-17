@@ -1,0 +1,18 @@
+{
+  "Bookings": [
+    {
+      "Orderid": 3732,
+      "hotelname": "The Piccadily",
+      "name": "Alfred Richards",
+      "phoneNumber": "8886833905",
+      "id": 1
+    },
+    {
+      "Orderid": 6729,
+      "hotelname": "Rodas - An Ecotel Hotel",
+      "name": "jdlkajfsd",
+      "phoneNumber": "qal;fjladsf",
+      "id": 2
+    }
+  ]
+}

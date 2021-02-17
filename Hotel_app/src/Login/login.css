@@ -1,0 +1,25 @@
+.container
+{
+    /* border:1px solid black; */
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+}
+@media all and (max-width:500px)
+{
+    .container
+    {
+          /* border:1px solid black; */
+        width: 100%;
+    height: 500px;
+    margin-top: 50px;
+       display: flex;
+       justify-content: center;
+    }
+    .container input
+    {
+        /* display: none; */
+        width: 300px;
+       
+    }
+}

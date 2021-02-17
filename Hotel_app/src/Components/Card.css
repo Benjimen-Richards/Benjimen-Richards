@@ -1,0 +1,14 @@
+.card
+{
+  margin: 30px;
+}
+.quickbooking
+{
+  /* border :1px solid black; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
