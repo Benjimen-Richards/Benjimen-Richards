@@ -2,7 +2,7 @@
 import axios from 'axios'
 import { Component } from 'react'
 import { Link } from 'react-router-dom'
-const registerurl = 'http://localhost:5000/api/auth/register'
+const registerurl = 'https://login-with-jwt-richards.herokuapp.com/hotel/register'
 // import './Css/Signin.css'
 class Register extends Component {
     constructor() {
@@ -37,7 +37,6 @@ class Register extends Component {
 
             }
         )
-
         this.props.history.push('/signin')
     }
     render() {
@@ -49,7 +48,7 @@ class Register extends Component {
                 <div className='signinlogo'>
                     <Link to='/'><img src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img></Link>
                 </div>
-                {/* <div className='form1'></div> */}
+
                 <div className='form2'>
                     <form action="/action_page.php">
                         <div>
@@ -57,19 +56,19 @@ class Register extends Component {
                         </div>
                         <div class="form-group">
                             <label for="email">Name</label>
-                            <input type="text" class="form-control" value={this.state.name} name='name' onChange={this.changehandler} />
+                            <input type="text" class="form-control" value={this.state.name} name='name' onChange={this.changehandler} autoComplete="off" />
                         </div>
                         <div class="form-group">
                             <label for="email">Email address:</label>
-                            <input type="email" class="form-control" value={this.state.email} name='email' onChange={this.changehandler} />
+                            <input type="email" class="form-control" value={this.state.email} name='email' onChange={this.changehandler} autoComplete="off" />
                         </div>
                         <div class="form-group">
                             <label for="email">Date of birth</label>
-                            <input type="date" class="form-control" value={this.state.dob} name='dob' onChange={this.changehandler} />
+                            <input type="date" class="form-control" value={this.state.dob} name='dob' onChange={this.changehandler} autoComplete="off" />
                         </div>
                         <div class="form-group">
                             <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" value={this.state.password} name='password' onChange={this.changehandler} />
+                            <input type="password" class="form-control" value={this.state.password} autoComplete="off" s name='password' onChange={this.changehandler} />
                         </div>
                         <div className='a'>
                             <button id='sigin_button' type="button" class="btn btn-default" onClick={this.submithandler}>Submit</button>

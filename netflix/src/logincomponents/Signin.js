@@ -2,7 +2,7 @@
 import { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Css/Signin.css'
-const burl = " http://localhost:5000/api/auth/login";
+const burl = "https://login-with-jwt-richards.herokuapp.com/hotel/login";
 class Signin extends Component {
     constructor() {
         super()
@@ -66,11 +66,11 @@ class Signin extends Component {
                         <div class="form-group">
                             <label for="email">Email address:</label>
                             <input type="text" name='email' value={this.state.email}
-                                onChange={this.changehandler} class="form-control" id="email" />
+                                onChange={this.changehandler} class="form-control" id="email" autoComplete="off" />
                         </div>
                         <div class="form-group">
                             <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd" name='password' value={this.state.password} onChange={this.changehandler} />
+                            <input type="password" class="form-control" id="pwd" name='password' value={this.state.password} onChange={this.changehandler} autoComplete="off" />
                         </div>
                         <div className='a'>
                             <button id='sigin_button' type="button" class="btn btn-default" onClick={this.submithandler}>Submit</button>
@@ -83,40 +83,7 @@ class Signin extends Component {
                                 <span style={{ fontSize: '18px' }}>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</span></h4>
                         </div>
                     </form>
-
                 </div>
-                <div className='footer'>
-                    <div className='Questions'>
-                        <h4>Questions? Call 000-800-040-4843</h4>
-                    </div>
-                    <div className='Footerlinks'>
-                        <div className='block'>
-                            <a href='/'>FAQ</a>
-                            <a href='/'>Cookie Preferences</a>
-
-                        </div>
-                        <div className='block'>
-                            <a href='/'>Help Centre</a>
-
-                            <a href='/'>Cookie Preferences</a>
-
-                        </div>
-                        <div className='block'>
-                            <a href='/'>Terms of Use</a>
-
-                        </div>
-                        <div className='block'>
-                            <a href='/'>Privacy</a>
-                        </div>
-                    </div>
-                    <div className='selectlang'>
-                        <select>
-                            <option>English</option>
-                            <option>हिंदी</option>
-                        </select>
-                    </div>
-                </div>
-
             </div>
         )
     }

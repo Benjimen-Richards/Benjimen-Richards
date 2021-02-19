@@ -62,27 +62,24 @@
   }
 
 
-  @media all and (max-width:400px)
+  @media all and (max-width:500px)
   {
+    
     .texth1
     {
-      /* display: none; */
-      font-size: 1rem;
+      font-size:small;
+      text-align: center;
     }
     .texth3
     {
-      font-size: 5px;
-    
-      word-wrap: break-word;
-      /* display: flex;
-      justify-content: center; */
+      font-size: large;
       text-align: center;
-
     }
     .img1 
     {
         /* display: none; */
       width: 100%;
     }
+
    
   }

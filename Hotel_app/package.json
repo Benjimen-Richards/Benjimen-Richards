@@ -20,7 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start-auth": "node server.js",
-    "json": "json-server --watch bookings.json --port 905"
+    "json": "json-server --watch bookings.json --port 905",
+    "dev": "nodemon mongodb/app.js"
   },
   "eslintConfig": {
     "extends": [

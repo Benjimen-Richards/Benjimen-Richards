@@ -59,7 +59,7 @@
     border: 1px solid #000000;    
   }
 
-  @media all and (max-width:400px)
+  @media all and (max-width:500px)
   {
     .wthcontainer
     {
@@ -67,6 +67,7 @@
     }
     .watchh1 
     {
+      font-size: large;
       text-align: center;
     }
     .watchh3

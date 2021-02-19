@@ -132,6 +132,7 @@
     /* border: 1px solid white; */
     
 }
+
 .navimage_list li
 {
     background-color: rgb(54, 48, 48);
@@ -180,26 +181,54 @@
     font-weight: bolder;
     font-size: 20px;
 }
+.nav_logout
+    {
+        display: none;
+    }
 
 @media all and (max-width:500px)
 {
+    .nav_logout
+    {
+        display: inline;
+    }
+    .nav_left_text h3
+{
+    /* color: black; */
+    margin-left: 10px;
+    font-size:18px;
+}
+.nav_left_text
+{
+    position: absolute;
+    top: 100px;
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
     .nav_left
     {
+        position: absolute;
+        left: 25%;
+        top: -30px;
         display: flex;
         flex-wrap: wrap;
-        margin-left: 30px;
     }
     .Profile_nav
     {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
         position: absolute;
+        background-color:rgb(32, 29, 29);
+        top: -2%;
+        border-radius: 5px;
+        height: 120px;
     }
     .nav_right
     {
-        display: flex;
+        display: none;
         flex-direction: row;
         align-items: center;
         flex-direction: column-reverse;
@@ -259,19 +288,7 @@
 .navuser_image
 {
     margin-left: 50px;
+}
 
-}
-.nav_left_text h3
-{
-    margin-left: 10px;
-    font-size: medium;
-}
-.nav_left_text
-{
-    display: flex;
-    justify-content: center;
-      
-
-}
 
 }

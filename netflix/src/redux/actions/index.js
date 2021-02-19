@@ -1,5 +1,5 @@
 import axios from "axios"
-const watchingurl = 'http://localhost:1234/watching'
+const watchingurl = 'https://login-with-jwt-richards.herokuapp.com/watching'
 const carturl = 'http://localhost:1234/cart'
 
 export const watching = () => {

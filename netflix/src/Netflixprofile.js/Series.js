@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { Component } from "react";
 import { withRouter } from "react-router";
 import './Css/Series.css'
-const url = 'http://localhost:1234/movies'
+const url = 'https://login-with-jwt-richards.herokuapp.com/movies'
 class Series extends Component {
     constructor() {
         super()
@@ -60,6 +61,7 @@ class Series extends Component {
         }
         return (
             <div className='Series_container'>
+                <Link to='/profile' className="btn btn-warning" style={{ width: "100px", height: "50px" }}>Back to Home</Link>
                 <div className='Series_searchbar'>
                     <input placeholder='Search series here' onChange={this.inputhandler} />
                 </div>

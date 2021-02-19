@@ -2,7 +2,7 @@ import axios from "axios";
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import './Css/Series.css'
-const url = 'http://localhost:1234/movies'
+const url = 'https://login-with-jwt-richards.herokuapp.com/movies'
 class Documantaries extends Component {
     constructor() {
         super()
@@ -50,8 +50,10 @@ class Documantaries extends Component {
         }
         return (
             <div className='Series_container'>
+                <Link to='/profile' className="btn btn-warning" style={{ width: "100px", height: "50px" }}>Back to Home</Link>
                 <div className='Series_searchbar'>
                     <input placeholder='Search Documantaries here' onChange={this.inputhandler} />
+
                 </div>
                 <div className='Seriessearch_results'>
                     {this.rendermovie(this.state.filteredseries)}

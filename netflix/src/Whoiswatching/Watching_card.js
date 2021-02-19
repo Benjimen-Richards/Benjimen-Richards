@@ -6,12 +6,16 @@ import { connect } from 'react-redux'
 import '../Whoiswatching/Watchingcard.css'
 import { watching } from '../redux/actions'
 
-const watchingurl = 'http://localhost:1234/watching'
+const watchingurl = 'https://login-with-jwt-richards.herokuapp.com/movies'
+const watchingcard = {
+    "image": "https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png",
+    "name": "alfred",
+    "id": 1
+}
 class Watching_card extends Component {
     constructor() {
         super()
         this.state = {
-
             visible: '',
             username: '',
             error: ''
@@ -21,7 +25,7 @@ class Watching_card extends Component {
     Setprofile = (data) => {
         sessionStorage.setItem('profile_name', data.name)
         sessionStorage.setItem('profile_image', data.image)
-        sessionStorage.setItem('movie_image', "https://i.pinimg.com/236x/ef/87/07/ef8707c0d1a39404c07450de32a8b83d.jpg")
+        sessionStorage.setItem('movie_image', "https://i.gadgets360cdn.com/large/netflix_best_movies_may_2020_1589355119754.jpg?downsize=950:*&output-quality=80")
         sessionStorage.setItem('movie_id', data.id)
         console.log(data, 'clicked')
         this.props.history.push('/profile')
@@ -30,15 +34,13 @@ class Watching_card extends Component {
         if (data) {
             // console.log(data)
             return data.map((item, idx) =>
-            (
-                <div style={{ textDecoration: 'none' }} key={idx} value={item.id} name={item.name} onClick={() => this.Setprofile(item)} >
-                    <div className='Card_container'  >
-                        <img src={item.image} alt='/' />
-                        <h4><b><i>{item.name}</i></b></h4>
-                    </div>
+            (<div style={{ textDecoration: 'none' }} key={item.id} value={item.id} name={item.name} onClick={() => this.Setprofile(item)} >
+                <div className='Card_container'  >
+                    <img src={item.image} alt='/' />
+                    <h4><b><i>{item.name}</i></b></h4>
                 </div>
+            </div>))
 
-            ))
         }
     }
     adduser = () => {

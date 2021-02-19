@@ -1,6 +1,9 @@
 import Axios from 'axios';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './login.css'
+
+const loginUrl = "https://login-with-jwt-richards.herokuapp.com/hotel/login"
 
 class LoginComponent extends Component {
     constructor() {
@@ -19,7 +22,7 @@ class LoginComponent extends Component {
         this.setState({ password: event.target.value })
     }
     handleSubmit = () => {
-        Axios.post("http://localhost:1234/hotel/login", this.state).then(res => {
+        Axios.post(loginUrl, this.state).then(res => {
             if (res.data) {
                 console.log(res.data)
                 sessionStorage.setItem('logintoken', res.data._id)
@@ -36,6 +39,7 @@ class LoginComponent extends Component {
     render() {
         return (
             <div className="container">
+
                 <div className="panel panel-danger">
                     <div className="panel-heading">
                         <h4>Login Component</h4>
@@ -56,6 +60,7 @@ class LoginComponent extends Component {
                         </div>
                         <br />
                         <button className="btn btn-success" onClick={this.handleSubmit}>Login</button>
+                        <Link to='/' className="btn btn-primary" style={{ marginLeft: "10px" }}>Back to home</Link>
                     </div>
                 </div>
 

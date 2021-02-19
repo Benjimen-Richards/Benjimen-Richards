@@ -3,7 +3,7 @@ import { Component } from "react";
 import { BsSkipBackward } from 'react-icons/bs'
 import { Link } from "react-router-dom";
 import './Css/Series.css'
-const url = 'http://localhost:1234/movies'
+const url = 'https://login-with-jwt-richards.herokuapp.com/movies'
 class Flims extends Component {
     constructor() {
         super()
@@ -56,6 +56,7 @@ class Flims extends Component {
         return (
             <div>
                 <div className='Series_container'>
+                    <Link to='/profile' className="btn btn-warning" style={{ width: "100px", height: "50px" }}>Back to Home</Link>
                     <div className='Series_searchbar'>
                         <input placeholder='Search Flims here' onChange={this.inputhandler} />
                     </div>

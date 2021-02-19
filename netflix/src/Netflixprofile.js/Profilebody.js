@@ -2,8 +2,8 @@ import { Component } from "react"
 import axios from 'axios'
 import './Css/Profilebody.css'
 import { withRouter } from "react-router"
-const url = 'http://localhost:1234/movies'
-const carturl = 'http://localhost:1234/cart'
+const url = 'https://login-with-jwt-richards.herokuapp.com/movies'
+const carturl = 'https://login-with-jwt-richards.herokuapp.com/cart'
 class Profilebody extends Component {
     constructor() {
         super()

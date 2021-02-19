@@ -1,6 +1,7 @@
 import Axios from 'axios';
 import React from 'react';
-const burl = 'http://localhost:1234/hotel/register'
+import { Link } from 'react-router-dom';
+const burl = "https://login-with-jwt-richards.herokuapp.com/hotel/register"
 class Registercomponent extends React.Component {
     state = {
         name: '',
@@ -23,6 +24,7 @@ class Registercomponent extends React.Component {
         return (
             <div className="container">
                 <div className="panel panel-primary">
+
                     <div className="panel-heading">
                         <h4>Register Component</h4>
                     </div>
@@ -43,7 +45,9 @@ class Registercomponent extends React.Component {
                             <input type="password" name="password" value={this.state.password} className="form-control"
                                 onChange={this.handlerchange} />
                         </div>
+                        <br />
                         <button className="btn btn-success" onClick={this.handleSubmit}>Register</button>
+                        <Link to='/' className="btn btn-primary" style={{ marginLeft: "10px" }}>Back to home</Link>
                     </div>
                 </div>
 

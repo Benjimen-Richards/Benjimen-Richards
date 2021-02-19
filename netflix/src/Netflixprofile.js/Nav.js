@@ -4,8 +4,8 @@ import { MdCancel } from 'react-icons/md'
 import './Css/Profile.css'
 import axios from 'axios'
 import { FiSearch } from 'react-icons/fi'
-const url = 'http://localhost:1234/movies'
-const carturl = 'http://localhost:1234/cart'
+const url = 'https://login-with-jwt-richards.herokuapp.com/movies'
+const carturl = 'https://login-with-jwt-richards.herokuapp.com/cart'
 class Profilenav extends Component {
     constructor() {
         super()
@@ -89,10 +89,10 @@ class Profilenav extends Component {
                 data.map(item =>
                 (
                     <li id={item.id} onClick={this.dataselect}> { item.name}</li>
-                    // console.log(item.name)
+
                 ))
             )
-            // console.log(data)
+
         }
     }
     setsearchvisible = () => {
@@ -102,10 +102,8 @@ class Profilenav extends Component {
         this.setState({ searchbarVisible: '', cancel: !this.state.cancel, inputvalue: '', listdata: '' })
     }
     render() {
-        // console.log(this.state.movies)
         return (
             <div className='profile_container'>
-
                 <div>
                     <div className='background_img'>
                         <img src={sessionStorage.getItem('movie_image')} alt='joker' />
@@ -116,6 +114,7 @@ class Profilenav extends Component {
                     </div>
                 </div>
                 <div className='Profile_nav' >
+
                     <div className='nav_left'>
                         <img src='https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png' alt='/'></img>
                         <div className="nav_left_text">
@@ -132,6 +131,11 @@ class Profilenav extends Component {
                             <Link to='/documantaries' style={{ textDecoration: 'none' }}>
                                 <div className='nav_select'>
                                     <h3>Documantaries</h3>
+                                </div>
+                            </Link>
+                            <Link style={{ textDecoration: 'none' }} onClick={this.logouthandler}>
+                                <div className='nav_logout'>
+                                    <h3>Logout</h3>
                                 </div>
                             </Link>
                         </div>
@@ -160,14 +164,15 @@ class Profilenav extends Component {
                             </div>
                             {this.state.visible && <div className='navimage_list' >
                                 <div className="w3-center w3-animate-top">
-                                    <li><Link to='/userprofile' style={{ textDecoration: "none" }}> Hi {sessionStorage.getItem('profile_name')}</Link></li>
+                                    <li><Link style={{ textDecoration: "none" }}> Hi {sessionStorage.getItem('profile_name')}</Link></li>
                                     <li><Link to='/watchlist' style={{ textDecoration: "none" }}>Watchlist</Link></li>
                                     <li onClick={this.logouthandler}>logout</li>
                                 </div></div>}
                         </div>
                     </div>
                 </div >
-            </div>
+
+            </div >
         )
     }
     componentDidMount() {

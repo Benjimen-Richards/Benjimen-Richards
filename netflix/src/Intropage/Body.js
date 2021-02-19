@@ -5,7 +5,7 @@ const Body = () => {
         <div className='bdycontainer'>
             <div className='text_container'>
                 <div className='texth1'>
-                    <h1>Enjoy on your TV.</h1>
+                    <h1>Enjoy on your Tv.</h1>
                 </div>
                 <div className='texth3'>
                     <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>

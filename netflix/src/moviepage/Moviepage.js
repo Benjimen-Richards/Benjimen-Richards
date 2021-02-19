@@ -12,14 +12,14 @@ class Moviepage extends Component {
         }
     }
     idhandler = (e) => {
-        const value = e.target.id
-        console.log(value)
-        const cartimage = this.state.movies.filter(item =>
-        (
-            parseInt(item.id) === parseInt(value)
-        ))
-        console.log(cartimage)
-        axios.post(carturl, cartimage)
+        // const value = e.target.id
+        // console.log(value)
+        // const cartimage = this.state.movies.filter(item =>
+        // (
+        //     parseInt(item.id) === parseInt(value)
+        // ))
+        // console.log(cartimage)
+        // axios.post(carturl, cartimage)
         this.props.history.push('/profile')
     }
     render() {
