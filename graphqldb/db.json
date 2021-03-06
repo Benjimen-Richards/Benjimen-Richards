@@ -1,0 +1,140 @@
+{
+    "movies":[{
+        "id": "1",
+        "name": "Riverdale",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/ef/87/07/ef8707c0d1a39404c07450de32a8b83d.jpg"
+        },
+        {
+        "id": "2",
+        "name": "Between",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/dd/aa/94/ddaa943e3f8ae8a4633f1d5a92477f21.jpg"
+        },
+        {
+        "id": "3",
+        "name": "Glitch",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/51/93/99/51939967ed93995d55340608884e0e32.jpg"
+        },
+        {
+        "id": "4",
+        "name": "Santa Clarita Diet",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/73/61/d3/7361d3497d657b3cae93eb3b41d2d7ed.jpg"
+        },
+        {
+        "id": "5",
+        "name": "The Walking Dead",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/da/dc/6f/dadc6f126e8d104819702b2c43de128a.jpg"
+        },
+        {
+        "id": "6",
+        "name": "A Series of unfortunatee Evenets",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/2d/f0/51/2df05181879bdfa7c843836a64e28bbb.jpg"
+        },
+        {
+        "id": "7",
+        "name": "1 Reasons Why",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/fc/6b/41/fc6b412f4e5da3519b7a23e53edc8929.jpg"
+        },
+        {
+        "id": "8",
+        "name": "Bloodline",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/ce/42/be/ce42be85a8374ea90994e815456c033e.jpg"
+        },
+        {
+        "id": "9",
+        "name": "Once",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/31/e2/5e/31e25ee33133fcef6a8328004188782f.jpg"
+        },
+        {
+        "id": "10",
+        "name": "LoveSick",
+        "genere": "Series",
+        "imageurl": "https://i.pinimg.com/236x/17/2f/2e/172f2e87d9341bca14df6ef55dfc670e.jpg"
+        },
+        {
+        "id": "11",
+        "name": "Stranger Things",
+        "genere": "Series",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXMHsJCyHKyf3X3oEmYczFvXsgIiNdSK2bMf3pXy17SGgjGp_Utp8F4BRP-ui192RsgKQxZCzvkGVuI2N7Z0Rgh5a48_HMeLuEAc1TDK-8PjJBLwLlDAmAEwMlYX.jpg?r=da1"
+        },
+        {
+        "id": "12",
+        "name": "Lost in Space",
+        "genere": "Series",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABao9TMw58bSJyX0HpbyhY5gizoMfnwLMvGEoO6IfZvHjup0AcSIDaiEsWWwm6P_u6fHmVyL1eaDXasAnNgeBxY0C-ADjB9ze-S5dzDFbEHkC8vFWNmlKsFCWkmvy.jpg?r=dab"
+        },
+        {
+        "id": "13",
+        "name": "Vikings",
+        "genere": "Series",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABerMAYcANk2GocrsAChkFkmaP5jrn7SbpD89ezcZ6buf4ITCzhqkJJ_e-f55Jv1mptxW6_tTD6qJKOc2kxK1v_S8RoqB6azrVntU9z1MSbxliK8-_iexPVFiYbq53ynHcw.jpg?r=eab"
+        },
+        {
+        "id": "14",
+        "name": "Friends",
+        "genere": "Series",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYryfSD2xXO3xKEPb6TJdccJ1pXIto2FWmwlmeiLno1w8qmKs-rieQp78QaimZFfnNFjgf8zqVT8PyORowGvzsUIzqE.jpg?r=75b"
+        },
+        {
+        "id": "15",
+        "name": "Money Heist",
+        "genere": "Series",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWN2gs7Ph0YCvz-pvnA2gio0pwYOM3T3jJ8xt3lPF7UsPpobqUexfddqZVp40Cu_Xy27q1liBPHrdIKGmy9p16Uf4C-n9aq5nnRU7licS5JjC2UXUCLG-RTezxqC.jpg?r=373"
+        },
+        {
+        "id": "16",
+        "name": "Lucifer",
+        "genere": "Series",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeAMbUJJlktp6w8UpYSHW8cJHkEeNS76gQw5ThMDuqn8QdmYH4ATHCfoJmgy9x3VBh6ZPa9h8Mit7PyyZifGP8bmBPd5LIr-WizyVYqIVPEaGKc7XP-LQ7wfgZar.jpg?r=62e"
+        },
+        {
+        "id": "17",
+        "name": "Breaking Bad",
+        "genere": "Series",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeAuDKIU6ojBLB_b3eTdFBIUmNJ57Sr7xXk4z8I7GyygIrXQyknSm8gI_dhh5Fsp2lnm8DY9ZOEOIA-C1ReeZ5254Ow.jpg?r=01d"
+        },
+        {
+        "id": "18",
+        "name": "Delhi Crime",
+        "genere": "Series",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbA3BuaGpZNF-heyWuI3L5OwsMg8Z71b6IoNIr1CQTOSgpIOfaXmKRdWlczOAB5Kr1S_SDwAs3KcCO2AHGJeHAVpVncsGJ8PR4vc4ZAhtOuoZXZJGnYhOMLkdkwo.jpg?r=0bd"
+        },
+        {
+        "id": "19",
+        "name": "The Last Kingdom",
+        "genere": "Series",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY61X8lNLH5LgEo88jfkptq8tUp-h5jF3x9Hqf9oLkIje28evOViDkydGLcwdufBglBSTNW6Ju8GrzvfsWiy8bXmqFj1H9DcPcHcEdbCBn6MNOWM5E7l5gKr4qfI.jpg?r=866"
+        },
+        {
+        "id": "20",
+        "name": "Narcos",
+        "genere": "Series",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa-oTyIxZjZX2RV59zIXh0I_NOJB16m7Iky-RTZ9jqavv58JOO4FcsoW_WH_vKdt9Cu8ZIZxDmDqb6FvEk6zj2aMp-GajzsrK9qJcFKdVZ7oNofBA9redABpGuwb.jpg?r=973"
+        },
+        {
+        "id": "21",
+        "name": "Ludo",
+        "genere": "Movies",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY_rBwlPDEznIL4MMygT4B6rMN6Snup4wUu3suDV1yjSi12EvH8whZ2XSlA2SGo17Gygf-nUrNz__YId3169Bb9ypEnSWMePQaIqnGFAni_bAuKJse1mGowtCaMO.jpg?r=cae"
+        },
+        {
+        "id": "22",
+        "name": "Extraction",
+        "genere": "Movies",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaUD92whdwqVnEPh5fMHOBL5vext3SdEnKXR03ZDZ7on7yhm0es-61Q_70kKhas_PtfHMDD49bJJ4F3w015XiAFW7H9cDUzEDl8TFSKPAHWhImqoatBUPOMxuj2N.jpg?r=1f7"
+        },
+        {
+        "id": "23",
+        "name": "Aquaman",
+        "genere": "Movies",
+        "imageurl": "https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa1nyBEi4gqCXXYJXObKWDwHT3HARnPQTPIi1G0IoXNApiXdldb6HG-M6sAaT4iSEE9L-SljqzTf0jlJl6WRfLvCRYA.jpg?r=845"
+        }]
+}

@@ -56,6 +56,5 @@ router.get('/userinfo', (req, res) => {
             res.send(data)
         })
     })
-
 })
 module.exports = router
