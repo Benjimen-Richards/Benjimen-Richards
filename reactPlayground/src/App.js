@@ -1,35 +1,49 @@
-import React from 'react'
-import {AiOutlineShoppingCart} from 'react-icons/ai'
-import { Link } from 'react-router-dom'
-import { cart } from './cart'
-import user from './user'
+import Hoc from "./Hoc/Hoc";
+import StockList from "./Hoc/StockList";
+import UserList from "./Hoc/UserList";
 
-const App = () => {
-  const renderusers=(data)=>
-  {
-    if(data)
+const StocksData = [
     {
-return data.map(user=>(
-  <div>
-    <li>{user.name}</li>
-  <button onClick={()=>addcart(user)}>Add to cart</button>
-  </div>
-))
+        id: 1,
+        name: 'TCS'
+          
+    },
+    {
+        id: 2,
+        name: 'Infosys'
+    },
+    {
+        id: 3,
+        name: 'Reliance'
     }
-  }
-  const addcart = (user)=>
-  {
-      console.log(cart)
-      cart.push(user)
-  }
-  return (
-    <div>
-    <Link to='/cart'>
-    <AiOutlineShoppingCart style={{width:'200px',height:'200px'}}/>
-    </Link>
-      {renderusers(user)}
-    </div>
-  )
-}
+  ];
+  const UsersData = [
+    {
+        id: 1,
+        name: 'Krunal'
+          
+    },
+    {
+        id: 2,
+        name: 'Ankit'
+    },
+    {
+        id: 3,
+        name: 'Rushabh'
+    }
+  ];
 
+const Stocks = Hoc(StockList,StocksData)
+
+const Users = Hoc(UserList,UsersData)
+
+const App =()=>
+{
+    return(
+       <div>
+            <Stocks/>
+            <Users/>
+       </div>
+    )
+}
 export default App

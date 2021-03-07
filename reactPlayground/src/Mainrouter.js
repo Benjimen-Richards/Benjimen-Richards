@@ -1,14 +1,16 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
+import Socketpage from './Socket'
 import App from './App'
-import CArtrender from './CArtrender'
+import Practice from './Practice'
 
 const Router = () => {
     return (
         <div>
             <div>
                 <Route path='/' exact component={App}/>
-                <Route path='/cart' component={CArtrender}/>
+                <Route path='/practice' component={Practice}/>
+                <Route path='/socket' component={Socketpage}/>
             </div>
         </div>
     )
